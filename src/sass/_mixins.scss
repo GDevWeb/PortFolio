@@ -1,0 +1,81 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin boxContainerStyle {
+  background-color: $card-background;
+  border-radius: 1rem;
+}
+
+@mixin boxContainerGlassMorphism($width, $height) {
+  width: $width;
+  height: $height;
+  background-color: rgb(255 255 255 / 5%);
+  box-shadow: 0 0 0.5rem rgb(0 0 0 / 15%);
+  backdrop-filter: blur(1rem);
+  border-radius: 1rem;
+}
+
+// Animations :
+@mixin link-hover($color) {
+  &:hover {
+    color: $color;
+  }
+}
+
+@mixin button-hover($border-color) {
+  &:hover {
+    border-color: $border-color;
+  }
+}
+
+@mixin logo-hover-shadow($color) {
+  &:hover {
+    filter: drop-shadow(0 0 2em $color);
+  }
+}
+
+@mixin rotate-animation {
+  animation: logo-spin infinite 20s linear;
+}
+
+@mixin fadeInEffect() {
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+
+    to {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+
+  .fade-in {
+    animation: fadeIn 2s ease-in-out;
+  }
+}
+
+
+@mixin fadeInEffectX {
+
+  @keyframes fade-in-X {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+
+    to {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+
+
+  .fade-in-X {
+    animation: fadeIn 2s ease-in-out;
+  }
+}

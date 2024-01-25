@@ -1,0 +1,21 @@
+@import 'mixins.scss';
+@import 'variables.scss';
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.name{
+    flex: 1 0 13rem;
+}
+
+.email{
+    flex: 1 0 13rem;
+}
+
+button{
+    flex: 1 0 4rem;
+    background-color: #0d6efd;
+}

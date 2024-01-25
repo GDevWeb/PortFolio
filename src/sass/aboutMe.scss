@@ -1,0 +1,62 @@
+@import "variables";
+@import "mixins";
+
+#aboutMeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  #aboutMeTitle {
+    @include flex-center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  #aboutMeText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+
+    @media screen and (min-width: 768px) {
+      width: 45%;
+    }
+
+    @media screen and (min-width: 1440px) {
+      align-items: start;
+      
+    }
+
+    
+    article {
+        height: 400px;
+        padding: 1rem;
+        overflow-y: scroll;
+        
+        @media screen and (min-width: 1350px) {
+          overflow-y: visible;
+        }
+    
+
+
+      p {
+        width: 100%;
+        text-align: left;
+      }
+    }
+  }
+
+  figure#avatar {
+    @include flex-center;
+    width: 80%;
+
+    @media screen and (min-width: 768px) {
+      width: 45%;
+    }
+
+    img {
+      border-radius: 1rem;
+    }
+  }
+}

@@ -1,0 +1,108 @@
+import * as Icons from "../../assets/icons/indexIcons";
+
+const hardSkillsArray = [
+  {
+    title: "HTML",
+    icon: Icons.iconHtml5,
+    content: "Maîtrise des balises et de la structure des pages web.",
+    link: "#",
+    fileName: "#",
+    linkText: "#",
+    category: "frontend",
+  },
+  {
+    title: "CSS",
+    icon: Icons.iconCss3,
+    content: "Styles, mises en page, animations et responsivité.",
+    link: "#",
+    fileName: "#",
+    linkText: "#",
+    category: "frontend",
+  },
+  {
+    title: "SASS",
+    icon: Icons.iconSass,
+    content: "Utilisation de Sass pour un CSS plus maintenable et évolutif.",
+    link: "#",
+    fileName: "#",
+    linkText: "#",
+    category: "frontend",
+  },
+  {
+    title: "Javascript",
+    icon: Icons.iconJs,
+    content: "Manipulation du DOM, programmation orientée objet...",
+    link: "#",
+    fileName: "#",
+    linkText: "#",
+    category: "frontend",
+  },
+  {
+    title: "TypeScript",
+    icon: Icons.iconTypeScript,
+    content:
+      "Expérience dans l'utilisation de TypeScript pour un développement JavaScript plus robuste. Intégration réussie avec des frameworks comme React.",
+    link: "#",
+    fileName: "#",
+    linkText: "#",
+    category: "tooling",
+  },
+  {
+    title: "React",
+    icon: Icons.iconReact,
+    content: "Développement d'interfaces utilisateur dynamiques et réactives.",
+    link: "#",
+    fileName: "#",
+    linkText: "#",
+    category: "frontend",
+  },
+  {
+    title: "NodeJS",
+    icon: Icons.iconNode,
+    content: "Création de serveurs côté backend avec Node.js.",
+    link: "#",
+    fileName: "#",
+    linkText: "#",
+    category: "backend",
+  },
+  {
+    title: "MongoDB",
+    icon: Icons.iconMongoDB,
+    content: "Bases de données NoSQL avec MongoDB.",
+    link: "#",
+    fileName: "#",
+    linkText: "#",
+    category: "backend",
+  },
+  {
+    title: "ExpressJS",
+    icon: Icons.iconExpressJs,
+    content: "Construction d'applications web avec le framework Express.js.",
+    link: "#",
+    fileName: "#",
+    linkText: "#",
+    category: "backend",
+  },
+  {
+    title: "Github",
+    icon: Icons.iconGithub,
+    content:
+      "Gestion de versions, collaboration et partage de code à travers la plate-forme GitHub. Profil GitHub disponible avec des projets publics et contributions open source.",
+    link: "#",
+    fileName: "",
+    linkText: "#",
+    category: "tooling",
+  },
+  {
+    title: "Figma",
+    icon: Icons.iconFigma,
+    content:
+      "Utilisation de Figma pour la conception d'interfaces utilisateur (UI) et la collaboration dans le processus de développement. Création de maquettes et prototypes interactifs.",
+    link: "#",
+    fileName: "#",
+    linkText: "#",
+    category: "tooling",
+  },
+];
+
+export default hardSkillsArray;

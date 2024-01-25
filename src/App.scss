@@ -1,0 +1,75 @@
+// app.scss
+@import './sass/reset';
+@import './sass/variables';
+@import './sass/mixins';
+@import './sass/typography';
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background: $background-gradient-color;
+}
+
+header {
+  @include flex-center;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 10vh;
+
+  h1 {
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    @include rotate-animation;
+  }
+}
+
+.card {
+  padding: 2em;
+  background-color: var(--card-background);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  width: 100%;
+  min-height: 60vh;
+  padding: 1rem;
+  margin: 10vh auto;
+  gap: 1rem;
+}
+
+footer {
+  @extend header;
+  gap: 1rem;
+
+  #copyright {
+    @include flex-center;
+    width: 100%;
+  }
+
+  #socialLinks {
+    @include flex-center;
+    gap: 1rem;
+    width: 100%;
+
+    a {
+      @include flex-center;
+      gap: 1rem;
+    }
+
+    .icons{
+      width: clamp(2rem , 4vw, 3rem);
+  }
+  }
+}

@@ -1,0 +1,59 @@
+@import "variables";
+@import "mixins";
+
+#professionalExperienceContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    #professionalExperienceTitle {
+        @include flex-center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    #experienceList {
+        @include flex-center;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+
+        .cardItem {
+            @include flex-center;
+            @include boxContainerGlassMorphism(80%, auto);
+            flex-wrap: wrap;
+            padding: 0.5rem;
+
+            &:hover {
+                transform: scale(0.9);
+                background-color: $primary-hover-color;
+                background-color: $link-hover-light;
+                transition: all 0.2s ease-in-out;
+            }
+
+            @media screen and (min-width: 768px) {
+
+                width: 45%;
+                min-height: 450px;
+
+            }
+
+            .cardItemTitle {
+                width: 100%;
+                padding: 1rem;
+            }
+
+            .cardItemContent {
+                @include flex-center;
+                width: 100%;
+
+            }
+
+            .download {
+                @include boxContainerGlassMorphism(15rem, auto);
+                padding: 1rem;
+            }
+        }
+    }
+}

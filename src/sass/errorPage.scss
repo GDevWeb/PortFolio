@@ -1,0 +1,23 @@
+@import 'mixins.scss';
+@import 'variables.scss';
+
+#errorContainer {
+    @include flex-center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 1rem;
+    width: 100%;
+    min-height: 50vh;
+    margin: 25vh auto;
+    background-color: $card-background;
+    border-radius: 1rem;
+
+    .errorInfoText.big {
+        width: 100%;
+    }
+
+    .errorInfoText {
+        width: 100%;
+    }
+
+}

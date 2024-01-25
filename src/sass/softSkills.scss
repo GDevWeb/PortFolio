@@ -1,0 +1,74 @@
+@import "variables";
+@import "mixins";
+
+#softSkillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    #softSkillsTitle {
+        @include flex-center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    #softSkillsList {
+        @include flex-center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+
+
+        .cardItem {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 1rem;
+            @include boxContainerGlassMorphism(80%, auto);
+            padding: 0.5rem;
+
+            &:hover {
+                transform: scale(0.9);
+                background-color: $primary-hover-color;
+                background-color: $link-hover-light;
+                transition: all 0.2s ease-in-out;
+            }
+
+            @media screen and (min-width: 768px) {
+                width: 33%;
+                min-height: 45rem;
+                height: auto;
+            }
+
+            @media screen and (min-width: 990px) {
+                width: 25%;
+            }
+
+            .cardItemTitle {
+                width: 100%;
+                padding: 1rem;
+            }
+
+
+            img {
+                width: 25%;
+
+                &:hover {
+                    @include logo-hover-shadow($link-active);
+                }
+            }
+
+            .cardItemContent {
+                @include flex-center;
+                width: 100%;
+
+            }
+
+            .download {
+                @include boxContainerGlassMorphism(15rem, auto);
+                padding: 1rem;
+            }
+        }
+    }
+}

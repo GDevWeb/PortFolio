@@ -1,9 +1,7 @@
-// vite.config.js
-import styleImport from 'vite-plugin-style-import';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-export default {
-  plugins: [
-    styleImport({
-    }),
-  ],
-};
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+})

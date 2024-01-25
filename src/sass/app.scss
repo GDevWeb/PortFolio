@@ -1,8 +1,8 @@
 // app.scss
-@import './sass/reset';
-@import './sass/variables';
-@import './sass/mixins';
-@import './sass/typography';
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+@import 'typography';
 
 #root {
   width: 100%;

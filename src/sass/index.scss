@@ -1,7 +1,7 @@
 // index.scss
-@import './sass/reset';
-@import './sass/variables';
-@import './sass/mixins';
+@import 'reset';
+@import 'variables';
+@import 'mixins';
 
 :root {
   --max-width: 1724px;

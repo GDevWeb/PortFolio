@@ -4,8 +4,8 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import "../src/index.scss";
-import "../src/app.scss";
+import "../src/sass/index.scss";
+import "../src/sass/app.scss";
 import Root from "./routes/Root";
 import PageHome from "./pages/PageHome";
 import PageAbout from "./pages/PageAbout";

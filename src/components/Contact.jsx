@@ -13,7 +13,7 @@ function Contact() {
         <p>N'hésitez pas à m'envoyer un e-mail à l'adresse suivante :</p>
       </div>
       <div id="contactMail">
-        <a href="mailto:votre@email.com" className="contactLink">
+        <a href="mailto:gaetan.dammaretz.dev@gmail.com" className="contactLink">
           <img src={icons.iconEmail} alt="Icône e-mail" />
           <span>mon@email.com</span>
         </a>

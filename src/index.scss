@@ -6,15 +6,11 @@
 :root {
   --max-width: 1724px;
   --margin: auto;
-  --background-color: background: linear-gradient(243deg, rgba(255, 255, 255, 0.00) 0%, #87CEEB 93.4%);
-  ;
+  --background-color: $background-gradient-color;
   --font-synthesis: none;
   --text-rendering: optimizeLegibility;
   --webkit-font-smoothing: antialiased;
   --moz-osx-font-smoothing: grayscale;
-  --primary-color: #646cff;
-  --link-hover-light: #747bff;
-  --link-hover-dark: #888;
 }
 
 a {
@@ -66,7 +62,7 @@ button:focus-visible {
   }
 
   a:hover {
-    @include link-hover(var(--link-hover-light));
+    @include link-hover($link-hover-light);
   }
 
   button {

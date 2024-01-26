@@ -1,10 +1,12 @@
-import VitePluginScss from 'vite-plugin-scss';
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-export default {
-  plugins: [VitePluginScss()],
-  esbuildOptions: {
-    jsxFactory: 'React.createElement',
-    jsxFragment: 'React.Fragment',
-    jsxInject: 'import React from "react"',
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  resolve: {
+    alias: {
+      "@sass": new URL('src/sass', import.meta.url).pathname,
+    },
   },
-};
+});

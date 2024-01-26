@@ -1,4 +1,4 @@
-import "../../sass/HardSkills.scss";
+import "@sass/harSkills.scss";
 import hardSkillsArray from "./hardSkillsArray";
 import CardItem from "../CardItem";
 import { useState, useRef, useLayoutEffect } from "react";

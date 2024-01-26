@@ -1,4 +1,4 @@
-import ArticleItem from "./articleItem";
+import ArticleItem from "./ArticleItem";
 import articlesList from "./articlesList";
 import illustrationDefault from "/images/illustrationDefault.jpg";
 import "../../sass/articles.scss";

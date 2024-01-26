@@ -17,7 +17,7 @@ import iconMicroship from "./iconMicroship.svg";
 import iconMongoDB from "./iconMongoDB.svg";
 import iconNode from "./iconNode.svg";
 import iconPaintBrush from "./iconPaintbrush.svg";
-import iconReact from "./iconReact.svg";
+import iconReact from "./iconReact.svg"
 import iconSass from "./iconSass.svg";
 import iconShield from "./iconShield.svg";
 import iconSliders from "./iconSliders.svg";

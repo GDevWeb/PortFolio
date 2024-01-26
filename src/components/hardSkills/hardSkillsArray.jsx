@@ -1,4 +1,4 @@
-import * as Icons from "../../assets/icons/indexIcons";
+import Icons from "../../assets/icons/indexIcons";
 
 const hardSkillsArray = [
   {

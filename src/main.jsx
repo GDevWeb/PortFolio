@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import "./index.scss";
 import "./app.scss";
-import Root from "./routes/Root";
+import Root from "./routes/root";
 import PageHome from "./pages/PageHome";
 import PageAbout from "./pages/PageAbout";
 import PageParcours from "./pages/PageParcours";

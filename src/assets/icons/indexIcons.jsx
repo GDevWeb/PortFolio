@@ -9,7 +9,7 @@ import iconGithubSquare from "./iconGithubSquare.svg";
 import iconHalfStroke from "./iconHalfStroke.svg";
 import iconHtml5 from "./iconHtml5.svg";
 import iconJs from "./iconJs.svg";
-import iconLapTop from "./iconLapTop.svg";
+import iconLapTop from "./iconLaptop.svg";
 import iconLinkedin from "./iconLinkedin.svg";
 import iconLogin from "./iconLogin.svg";
 import iconLogout from "./iconLogout.svg";

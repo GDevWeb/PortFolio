@@ -23,7 +23,7 @@ import iconShield from "./iconShield.svg";
 import iconSliders from "./icon_Sliders.svg";
 import iconTailwind from "./iconTailwind.svg";
 import iconTrophy from "./iconTrophy.svg";
-import iconTypeScript from "./iconTypeScript.svg";
+import iconTypeScript from "./icon_TypeScript.svg";
 import iconUserPlus from "./iconUserPlus.svg";
 import iconUsers from "./iconUsers.svg";
 

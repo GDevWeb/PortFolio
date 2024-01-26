@@ -16,7 +16,7 @@ import iconLogout from "./iconLogout.svg";
 import iconMicroship from "./iconMicroship.svg";
 import iconMongoDB from "./iconMongoDB.svg";
 import iconNode from "./iconNode.svg";
-import iconPaintBrush from "./iconPaintBrush.svg";
+import iconPaintBrush from "./iconPaintbrush.svg";
 import iconReact from "./iconReact.svg";
 import iconSass from "./iconSass.svg";
 import iconShield from "./iconShield.svg";

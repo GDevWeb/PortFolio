@@ -23,7 +23,7 @@ function SingleArticle() {
         <h2>{title}</h2>
       </div>
       <figure>
-        <img src={picture ? "" : illustrationDefault} alt="" />
+        <img src={picture ? picture : illustrationDefault} alt="" />
       </figure>
       <div id="articleContent">
         <p>{content}</p>

@@ -29,6 +29,15 @@ const hardSkillsArray = [
     category: "frontend",
   },
   {
+    title: "BULMA",
+    icon: Icons.iconBulma,
+    content: "Utilisation du framework CSS Bulma pour un rendu propre et rapide.",
+    link: "#",
+    fileName: "#",
+    linkText: "#",
+    category: "frontend",
+  },
+  {
     title: "Javascript",
     icon: Icons.iconJs,
     content: "Manipulation du DOM, programmation orientée objet...",

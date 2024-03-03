@@ -2,55 +2,69 @@
 @import "mixins";
 
 #singleArticleContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 80%;
+  padding: 1rem;
+  margin: auto;
+  @include boxContainerGlassMorphism(80%, auto);
+
+  @media screen and (min-width: 768px) {
     width: 80%;
-    padding: 1rem;
+  }
+
+  @media screen and (min-width: 990px) {
+    width: 80%;
+  }
+
+  #articleTitle {
+    width: 100%;
+  }
+
+  figure {
+    width: 80%;
     margin: auto;
-    @include boxContainerGlassMorphism(80%, auto);
 
     @media screen and (min-width: 768px) {
-        width: 80%;
+        width: 60%;
+      }
+    
+      @media screen and (min-width: 990px) {
+        width: 40%;
+      }
+    
+
+    img {
+      border: none;
+      border-radius: 1rem;
     }
+  }
 
-    @media screen and (min-width: 990px) {
-        width: 80%;
+  #articleContent {
+    width: 80%;
+    padding: 1rem;
+    min-height: 25rem;
+
+    p{ 
+        text-align: left;
+
     }
+  }
 
-    #articleTitle {
-        width: 100%;
-    }
+  #articleDetail {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+    justify-content: space-evenly;
+    width: 80%;
+  }
 
-    figure {
-        width: 80%;
-
-        img {
-            border: none;
-            border-radius: 1rem;
-        }
-    }
-
-    #articleContent {
-        width: 80%;
-        padding: 1rem;
-        min-height: 25rem;
-    }
-
-    #articleDetail {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: left;
-        justify-content: space-evenly;
-        width: 80%;
-    }
-
-    span.articleLabel{
-        font-weight: bolder;
-        color: $dark-text-color;
-    }
-
+  span.articleLabel {
+    font-weight: bolder;
+    color: $dark-text-color;
+  }
 }

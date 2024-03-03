@@ -1,4 +1,5 @@
 import iconBars from "./iconBars.svg";
+import iconBulma from "./icon_Bulma.svg";
 import iconComments from "./iconComments.svg";
 import iconCss3 from "./iconCss3.svg";
 import iconExpressJs from "./iconExpressJS.svg";
@@ -29,6 +30,7 @@ import iconUsers from "./iconUsers.svg";
 
 export default{
   iconBars,
+  iconBulma,
   iconComments,
   iconCss3,
   iconExpressJs,

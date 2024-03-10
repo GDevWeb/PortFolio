@@ -13,17 +13,13 @@ function SoftSkills() {
         <CardItem
           icon={icons.iconSliders}
           title={"Adaptabilité"}
-          content={
-            "Capacité à s'adapter à des environnements professionnels variés."
-          }
+          content={"Capacité à s'adapter à des environnements professionnels variés."}
         />
 
         <CardItem
           title={"Détermination"}
           icon={icons.iconTrophy}
-          content={
-            "Persévérance dans la poursuite des objectifs malgré les défis."
-          }
+          content={"Persévérance dans la poursuite des objectifs malgré les défis."}
         />
 
         <CardItem
@@ -33,11 +29,9 @@ function SoftSkills() {
         />
 
         <CardItem
-          title={"Curisoté technologique"}
+          title={"Curiosité technologique"}
           icon={icons.iconLapTop}
-          content={
-            "Intérêt constant pour les dernières avancées technologiques."
-          }
+          content={"Intérêt constant pour les dernières avancées technologiques."}
         />
 
         <CardItem
@@ -49,17 +43,13 @@ function SoftSkills() {
         <CardItem
           title={"Communication"}
           icon={icons.iconComments}
-          content={
-            "Clarté et efficacité dans la communication professionnelle."
-          }
+          content={"Clarté et efficacité dans la communication professionnelle."}
         />
 
         <CardItem
           title={"Résilience"}
           icon={icons.iconShield}
-          content={
-            "Capacité à surmonter les défis et à rebondir après des situations difficiles. Faire preuve de persévérance et de résistance face aux obstacles professionnels, tout en maintenant une attitude positive et constructive."
-          }
+          content={"Capacité à surmonter les défis et à rebondir après des situations difficiles. Faire preuve de persévérance et de résistance face aux obstacles professionnels, tout en maintenant une attitude positive et constructive."}
         />
       </div>
     </div>

@@ -13,16 +13,6 @@ const articlesList = [
     date: "27/01/2024",
     tags: ["Alternance", "Développeur"],
   },
-  {
-    id: 1,
-    picture: seminaryWeek,
-    title: "🚀 Mon Aventure à Junia Xp - Une Semaine Inspirante 🚀",
-    author: "GDevWeb",
-    content:
-    "Mon séjour au séminaire de Junia Xp a été une véritable expérience enrichissante ! Trois jours de découvertes, d'apprentissages et de rencontres stimulantes m'ont préparé à cette nouvelle étape professionnelle. Un grand merci à toute l'équipe pour son professionnalisme et son dévouement. Je suis impatient(e) de commencer cette aventure avec vous ! 😉 ℹ️Pour les employeurs de la tech : Je suis un développeur web passionné par le frontend, à la recherche d'un contrat de professionnalisation en tant que Bachelor Développeur Web. Mon rythme de travail idéal est une semaine en école et deux semaines chez l'employeur. 💪P.s : En plus de coder, je sais aussi faire danser mes pectoraux 🤣 Alors, ne tardez pas à me contacter ! ",
-    date: "08/02/2024",
-    tags: ["Junia XP", "Séminaire", "DevWeb"],
-  },
 ];
 
 export default articlesList;

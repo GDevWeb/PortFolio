@@ -47,6 +47,15 @@ const hardSkillsArray = [
     category: "frontend",
   },
   {
+    title: "GreenSock",
+    icon: Icons.iconGreenSock,
+    content: "Pour des animations stylées",
+    link: "#",
+    fileName: "#",
+    linkText: "#",
+    category: "frontend",
+  },
+  {
     title: "TypeScript",
     icon: Icons.iconTypeScript,
     content:

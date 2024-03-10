@@ -7,6 +7,7 @@ import iconEmail from "./iconEmail.svg";
 import iconFigma from "./iconFigma.svg";
 import iconGithub from "./iconGithub.svg";
 import iconGithubSquare from "./iconGithubSquare.svg";
+import iconGreenSock from "./icon_GreenSock.svg";
 import iconHalfStroke from "./iconHalfStroke.svg";
 import iconHtml5 from "./iconHtml5.svg";
 import iconJs from "./iconJs.svg";
@@ -38,6 +39,7 @@ export default{
   iconFigma,
   iconGithub,
   iconGithubSquare,
+  iconGreenSock,
   iconHalfStroke,
   iconHtml5,
   iconJs,

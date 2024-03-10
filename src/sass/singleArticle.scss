@@ -34,24 +34,40 @@
       }
     
       @media screen and (min-width: 990px) {
-        width: 40%;
+        width: 25%;
       }
     
 
     img {
-      border: none;
-      border-radius: 1rem;
+    @include imgResponsive();
     }
   }
 
   #articleContent {
-    width: 80%;
+    width: 100%;
     padding: 1rem;
     min-height: 25rem;
 
+
+    @media screen and (min-width: 768px) {
+      width: 60%;
+    }
+
+
     p{ 
         text-align: left;
-
+        max-height: 250px;
+        overflow-y: scroll;
+        
+        @media screen and (min-width: 768px) {
+          max-height: 350px;
+        }
+      
+        @media screen and (min-width: 990px) {
+          max-height: 450px;
+          overflow: auto;
+        }
+  
     }
   }
 

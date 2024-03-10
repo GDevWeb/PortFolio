@@ -1,12 +1,12 @@
 import "../sass/home.scss";
-import myAvatar from "/images/avatar.jpg";
+import myAvatar from "/images/avatar2.jpg";
 import { Link } from "react-router-dom";
 
 function Home() {
   return (
     <div id="homeContainer">
       <div id="homeTitle">
-        <h2>Développeur web frontend Jr</h2>
+        <h2>Concepteur et Développeur d'Application Javascript et React</h2>
       </div>
 
       <figure id="avatar">

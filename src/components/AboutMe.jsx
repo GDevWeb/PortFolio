@@ -1,5 +1,5 @@
 import "../sass/aboutMe.scss";
-import myAvatar from "/images/avatar.jpg";
+import myAvatar from "/images/avatar2.jpg";
 import { Link } from "react-router-dom";
 
 function AboutMe() {
@@ -27,23 +27,36 @@ function AboutMe() {
             technologies telles que HTML, CSS, JavaScript, React, et Node.js.
           </p>
           <p>
-            En dehors du code, je suis un mélomane-guitariste, un adepte du
-            street workout et un passionné des dernières technologies. Mon
-            approche du développement va au-delà de l'écriture de lignes de code
-            ; elle consiste à fusionner la beauté du design avec la puissance du
-            code.
+            Bien que je n'aie pas encore eu d'expérience formelle en tant que
+            développeur web, j'ai travaillé sur divers projets officieux et
+            informels, mettant en pratique mes compétences en développement
+            JavaScript et React. Je suis passionné par la création de solutions
+            innovantes et je suis impatient de partager avec vous mes
+            expériences et les leçons que j'ai apprises en cours de route.
           </p>
           <p>
-            Explorez mon parcours professionnel, découvrez mes compétences, mes
-            projets et ma vision du développement web. Chaque projet que je
-            réalise est une nouvelle histoire, et je suis enthousiaste à l'idée
-            de partager ces expériences avec vous.
+            En dehors du code, je suis un mélomane-guitariste, un adepte du
+            street workout et un passionné des dernières technologies. Mon
+            approche du développement web va au-delà de simplement écrire du
+            code ; elle vise à harmoniser le design et la fonctionnalité pour
+            créer des expériences utilisateur exceptionnelles.
+          </p>
+          <p>
+            Bien que mon expérience professionnelle formelle dans le
+            développement web soit limitée, j'ai consacré du temps à explorer et
+            à développer mes compétences de manière autodidacte. Mon parcours
+            comprend une série de projets personnels et informels où j'ai pu
+            mettre en pratique mes connaissances en développement JavaScript et
+            React. Je suis passionné par l'apprentissage continu et par
+            l'opportunité de collaborer avec d'autres professionnels pour créer
+            des expériences web mémorables.
           </p>
           <p>
             <Link to="/contact">Prêt à collaborer ? Contactez-moi ici</Link> et
             découvrez comment nous pouvons créer ensemble des expériences web
-            mémorables. Bienvenue dans mon univers numérique, où chaque ligne de
-            code est une expression de ma passion.
+            mémorables. Je suis passionné par la création de solutions
+            innovantes et je suis impatient de discuter de votre prochain projet
+            avec vous !
           </p>
         </article>
       </div>

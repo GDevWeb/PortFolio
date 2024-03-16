@@ -12,6 +12,7 @@ import PageAbout from "./pages/PageAbout";
 import PageParcours from "./pages/PageParcours";
 import PageSoftSkills from "./pages/PageSoftSkills";
 import PageHardSkills from "./pages/PageHardSkills";
+import PageProjects from "./pages/PageProjects";
 import PageArticles from "./pages/PageArticles";
 import PageSingleArticle from "./pages/PageSingleArticle";
 import PageContact from "./pages/PageContact";
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "hardSkills",
         element: <PageHardSkills />,
+      },
+      {
+        path: "projects",
+        element: <PageProjects/>
       },
       {
         path: "articles",

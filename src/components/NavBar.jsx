@@ -10,6 +10,7 @@ function NavBar() {
         <NavLink to="/parcours" className={"navLink"} activeClassName="activeLink">Mon parcours</NavLink>
         <NavLink to="/softSkills" className={"navLink"} activeClassName="activeLink">SoftSkills</NavLink>
         <NavLink to="/hardSkills" className={"navLink"} activeClassName="activeLink">HardSkills</NavLink>
+        <NavLink to="/projects" className={"navLink"} activeClassName="activeLink">Projets</NavLink>
         <NavLink to="/articles" className={"navLink"} activeClassName="activeLink">Articles</NavLink>
         <NavLink to="/contact"className={"navLink"} activeClassName="activeLink"> Contact</NavLink>
       </ul>

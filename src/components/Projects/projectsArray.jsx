@@ -13,7 +13,7 @@ const projectsArray = [
     title: "Memory Kidz",
     image: ImagesProject.imageMemoryKidz,
     description:
-      "Memory Kidz est un jeux de memory simple abordable dès 4 ans. Attention couleurs girly",
+    "Memory Kidz est un jeu de mémoire simple et amusant, adapté aux enfants dès l'âge de 4 ans. Avec ses couleurs vives et son design ludique, ce jeu offre une expérience divertissante tout en stimulant la mémoire et la concentration des enfants. Développé avec HTML, CSS et JavaScript, Memory Kidz propose un mode de jeu unique où les joueurs doivent trouver les bonnes paires en moins de coups possible. Son interface intuitive et conviviale permet une navigation facile, tandis que sa compatibilité responsive garantit une expérience de jeu optimale sur tous les appareils, que ce soit sur un ordinateur de bureau, une tablette ou un smartphone. Plongez dans le monde captivant de Memory Kidz et offrez à vos enfants un moyen amusant d'exercer leur cerveau et de développer leurs compétences cognitives.",    
     link: "https://gdevweb.github.io/Game-Memory-Card/",
     category: "frontend, html, css, javascript, responsive",
   },

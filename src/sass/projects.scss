@@ -1,0 +1,115 @@
+@import "variables";
+@import "mixins";
+
+#projectsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+
+    #projectTitle {
+        @include flex-center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    article {
+        @include boxContainerGlassMorphism(80%, auto);
+        padding: 1rem;
+        ;
+    }
+
+    #filter {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: flex-end;
+        width: 100%;
+
+        #filterName {
+            font-weight: bolder
+        }
+
+        #checkBoxesFilterContainer {
+            display: flex;
+            gap: 1rem;
+            font-size: 2rem;
+            font-weight: bolder;
+            text-transform: capitalize;
+        }
+    }
+
+    #projectsList {
+        @include flex-center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+
+        .cardItem {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 1rem;
+            @include boxContainerGlassMorphism(80%, auto);
+            padding: 0.5rem;
+
+            &:hover {
+                transform: scale(0.9);
+                background-color: $primary-hover-color;
+                background-color: $link-hover-light;
+                transition: all 0.2s ease-in-out;
+            }
+
+            @media screen and (min-width: 768px) {
+                width: 33%;
+                min-height: 90rem;
+            }
+
+            @media screen and (min-width: 990px) {
+                width: 25%;
+            }
+
+            .cardItemTitle {
+                width: 100%;
+                padding: 1rem;
+            }
+
+
+            img {
+                width: 45%;
+                height: auto;
+                background-position: center;
+                background-size: cover;
+                
+                &:hover {
+                    @include logo-hover-shadow($link-active);
+                }
+            }
+
+            .cardItemContent {
+                @include flex-center;
+                width: 100%;
+
+            }
+
+            // p>a.download {
+            //     display: block;
+            //     @include boxContainerGlassMorphism(5rem, auto);
+            //     padding: 1rem;
+
+            //     &:hover {
+            //         transform: rotate(90deg);
+            //         transition: rotate 0.2s ease-in-out;
+            //     }
+            // }
+
+        }
+
+    }
+}
+
+// Animation lors du filtrage :
+@media screen and (min-width: 768px) {
+    @include fadeInEffect;
+}

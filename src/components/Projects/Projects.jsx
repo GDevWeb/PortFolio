@@ -1,3 +1,4 @@
+import "../../sass/projects.scss";
 import projectsArray from "./projectsArray";
 import CardItem from "../../components/CardItem";
 
@@ -10,6 +11,7 @@ function Projects() {
         icon={project.image}
         content={project.description}
         link={project.link}
+        linkText={"voir le projet"}
       />
     );
   });
@@ -22,15 +24,14 @@ function Projects() {
       <article>
         <h3>Retrouver ma liste d'une sélection de projets</h3>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis
-          libero autem temporibus nulla ullam dolor natus quo reprehenderit
-          amet? Est harum recusandae fuga! Velit commodi delectus earum ullam
-          sed cum.
-        </p>
+          Découvrez ci-dessous quelques-uns des projets sur lesquels j'ai
+          travaillé. Chacun d'eux représente une expérience unique dans laquelle
+          j'ai mis en œuvre mes compétences en développement web pour créer des
+          solutions innovantes et fonctionnelles.
+        </p>{" "}
       </article>
 
-      <div id="projectsList"></div>
-      {projectList}
+      <div id="projectsList">{projectList}</div>
     </div>
   );
 }

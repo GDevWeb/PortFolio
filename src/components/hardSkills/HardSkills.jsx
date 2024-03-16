@@ -6,7 +6,7 @@ import { useState, useRef, useLayoutEffect } from "react";
 function HardSkills() {
   const [selectedCategory, setSelectedCategory] = useState("both");
   const [filterSkills, setFilterSkills] = useState(hardSkillsArray);
-  const harSkillsRef = useRef();
+  const hardSkillsRef = useRef();
 
   const handleFilter = (category) => {
     setSelectedCategory(category);
@@ -22,7 +22,7 @@ function HardSkills() {
   };
 
   useLayoutEffect(() => {
-    harSkillsRef.current.childNodes.forEach((skillElement) => {
+    hardSkillsRef.current.childNodes.forEach((skillElement) => {
       skillElement.style.opacity = 1;
       skillElement.classList.toggle("fade-in");
     });
@@ -109,7 +109,7 @@ function HardSkills() {
         </p>
       </article>
 
-      <div id="hardSkillsList" ref={harSkillsRef}>
+      <div id="hardSkillsList" ref={hardSkillsRef}>
         {hardSkillsSet}
       </div>
     </div>

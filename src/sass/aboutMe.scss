@@ -13,7 +13,7 @@
     width: 100%;
   }
 
-  #aboutMeText{
+  #aboutMeText {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,19 +25,20 @@
 
     @media screen and (min-width: 1440px) {
       align-items: start;
-      
+
     }
 
-    
+
     article {
-        height: 400px;
-        padding: 1rem;
-        overflow-y: scroll;
-        
-        @media screen and (min-width: 1350px) {
-          overflow-y: visible;
-        }
-    
+      height: 400px;
+      padding: 1rem;
+      overflow-y: scroll;
+
+      @media screen and (min-width: 1220px) {
+        height: 800px;
+        overflow: auto;
+      }
+
 
 
       p {
@@ -47,16 +48,43 @@
     }
   }
 
-  figure#avatar {
+  #avatar {
     @include flex-center;
-    width: 80%;
+    width: 60%;
 
     @media screen and (min-width: 768px) {
       width: 45%;
     }
 
-    img {
-      border-radius: 1rem;
+    @media screen and (min-width: 990px) {
+      width: 45%;
+    }
+
+    @media screen and (min-width: 1024px) {
+      width: 35%;
+    }
+
+    @media screen and (min-width: 1220px) {
+      width: 25%;
+    }
+
+    @media screen and (min-width: 1999px) {
+      width: 15%;
+    }
+    
+
+    figure {
+      @include flex-center;
+      width: 100%;
+
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 100%;
+      }
     }
   }
 }

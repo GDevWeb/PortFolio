@@ -9,9 +9,11 @@ function AboutMe() {
         <h2>À propos</h2>
       </div>
 
-      <figure id="avatar">
+    <div id="avatar">
+      <figure>
         <img src={myAvatar} alt={"Ma photo via Leonardo A.I"} />
       </figure>
+    </div>
 
       <div id="aboutMeText">
         <article>

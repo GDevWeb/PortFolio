@@ -83,5 +83,7 @@ navBar into BottomBar
 header
 text home et about
 
+hello
+
 
 */

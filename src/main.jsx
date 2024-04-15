@@ -77,4 +77,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <RouterProvider router={router} />
   </React.StrictMode>
 );
-//mmmm
+/* update le 15 avril  
+
+navBar into BottomBar
+header
+text home et about
+
+
+*/

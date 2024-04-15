@@ -5,7 +5,7 @@ function AboutMe() {
   return (
     <div id="aboutMeContainer">
       <div id="aboutMeTitle">
-        <h2>À propos</h2>
+        <h2>Faisons connaissance !</h2>
       </div>
 
       <div id="aboutMeText">

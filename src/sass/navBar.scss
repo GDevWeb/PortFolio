@@ -2,76 +2,67 @@
 @import "mixins";
 
 #navBar {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  background-color: #1b1c1c;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #1b1c1c;
 
-  .container-navIcon {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    margin: 1rem;
+    .container-navIcon {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        margin: 1rem;
 
-    .navIcon {
-      width: 24px;
-      height: auto;
-    }
-  }
-
-  ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 1rem;
-    gap: 1rem;
-
-    &.show {
-      display: flex;
-      opacity: 0;
-      transition: opacity 0.5s ease-in-out;
+        .navIcon {
+            width: 24px;
+            height: auto;
+        }
     }
 
-    &.active {
-      opacity: 1;
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 1rem;
+        gap: 1rem;
+
+        &.show {
+            display: flex;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        &.active {
+            opacity: 1;
+        }
+
+        &.hide {
+            display: none;
+        }
+
+        .navLink {
+            text-decoration: none;
+            color: $link-hover-dark;
+            transition: color 0.9s ease-in-out;
+
+            &:hover {
+                color: $link-hover-light;
+            }
+
+            &.activeLink,
+            &.active {
+                color: $link-active;
+            }
+        }
+
+        &> :first-child {
+            margin-left: 1rem;
+        }
     }
-
-    &.hide {
-      display: none;
-    }
-
-    .navLink {
-      text-decoration: none;
-      color: $link-hover-dark;
-      transition: color 0.9s ease-in-out;
-
-      &:hover {
-        color: $link-hover-light;
-      }
-
-      &.activeLink,
-      &.active {
-        color: $link-active;
-      }
-    }
-
-    & > :first-child {
-      margin-left: 1rem;
-    }
-
-    // @media screen and (min-width: 768px) {
-    //     ul {
-    //         flex-direction: column;
-    //         align-items: flex-start;
-    //         justify-content: center;
-    //         align-items: center;
-    //     }
-    // }
-  }
 }

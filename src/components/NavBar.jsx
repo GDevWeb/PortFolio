@@ -88,6 +88,7 @@ function NavBar() {
           src={toggleNavBar ? indexIcons.iconXMark : indexIcons.iconBars}
           alt="icon barre de navigation"
           className="navIcon"
+          aria-label="bouton de la barre de navigation"
         />
       </div>
     </nav>

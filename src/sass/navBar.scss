@@ -44,13 +44,12 @@
 
     &.hide {
       display: none;
-      opacity: 1;
     }
 
     .navLink {
       text-decoration: none;
       color: $link-hover-dark;
-      transition: color 0.3s ease;
+      transition: color 0.9s ease-in-out;
 
       &:hover {
         color: $link-hover-light;

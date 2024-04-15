@@ -16,14 +16,25 @@ function NavBar() {
   return (
     <nav id="navBar">
       <ul className={toggleNavBar ? "active" : "hide"}>
-        <NavLink to="/" className={"navLink"} activeClassName="activeLink">
+        <NavLink
+          to="/"
+          onClick={handleNavBar}
+          className={"navLink"}
+          activeClassName="activeLink"
+        >
           Accueil
         </NavLink>
-        <NavLink to="/about" className={"navLink"} activeClassName="activeLink">
+        <NavLink
+          to="/about"
+          onClick={handleNavBar}
+          className={"navLink"}
+          activeClassName="activeLink"
+        >
           À propos
         </NavLink>
         <NavLink
           to="/parcours"
+          onClick={handleNavBar}
           className={"navLink"}
           activeClassName="activeLink"
         >
@@ -31,6 +42,7 @@ function NavBar() {
         </NavLink>
         <NavLink
           to="/softSkills"
+          onClick={handleNavBar}
           className={"navLink"}
           activeClassName="activeLink"
         >
@@ -38,6 +50,7 @@ function NavBar() {
         </NavLink>
         <NavLink
           to="/hardSkills"
+          onClick={handleNavBar}
           className={"navLink"}
           activeClassName="activeLink"
         >
@@ -45,6 +58,7 @@ function NavBar() {
         </NavLink>
         <NavLink
           to="/projects"
+          onClick={handleNavBar}
           className={"navLink"}
           activeClassName="activeLink"
         >
@@ -52,6 +66,7 @@ function NavBar() {
         </NavLink>
         <NavLink
           to="/articles"
+          onClick={handleNavBar}
           className={"navLink"}
           activeClassName="activeLink"
         >
@@ -59,6 +74,7 @@ function NavBar() {
         </NavLink>
         <NavLink
           to="/contact"
+          onClick={handleNavBar}
           className={"navLink"}
           activeClassName="activeLink"
         >

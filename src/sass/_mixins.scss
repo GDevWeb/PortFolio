@@ -19,13 +19,13 @@
 }
 
 // img
-@mixin imgResponsive(){
-  width: 100%;
-  height: auto;
+@mixin imgResponsive($width : 100%, $height: auto, $border-radius: 1rem){
+  width: $width;
+  height: $height;
   object-fit: cover;
   object-position: center;
   border: none;
-  border-radius: 1rem;
+  border-radius: $border-radius;
 }
 
 // Animations :

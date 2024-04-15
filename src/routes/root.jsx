@@ -1,3 +1,4 @@
+import Header from "../components/Header";
 import NavBar from "../components/NavBar";
 import { Route, Routes } from "react-router-dom";
 import PageHome from "../pages/PageHome";
@@ -19,8 +20,7 @@ export default function Root() {
   return (
     <>
       <header>
-        <h1>GDevWeb - Développeur web</h1>
-        <NavBar />
+        <Header/>
       </header>
       <main>
         <Routes>
@@ -58,6 +58,7 @@ export default function Root() {
           </h5>
         </div>
       </footer>
+      <NavBar />
     </>
   );
 }

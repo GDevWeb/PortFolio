@@ -16,7 +16,7 @@ header {
   flex-wrap: wrap;
   width: 100%;
   min-height: 10vh;
-  background-color: #1B1C1C;
+  background-color: $background-color;
 
   h1 {
     width: 100%;
@@ -46,28 +46,4 @@ main {
   padding: 1rem;
   margin: 10vh auto;
   gap: 1rem;
-}
-
-footer {
-  gap: 1rem;
-
-  #copyright {
-    @include flex-center;
-    width: 100%;
-  }
-
-  #socialLinks {
-    @include flex-center;
-    gap: 1rem;
-    width: 100%;
-
-    a {
-      @include flex-center;
-      gap: 1rem;
-    }
-
-    .icons{
-      width: clamp(2rem , 4vw, 3rem);
-  }
-  }
 }

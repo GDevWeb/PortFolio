@@ -2,9 +2,7 @@
 @import "mixins";
 
 #headerContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    @include flex-center;
   width: 100%;
   background-color: rgb(255 255 255 / 5%);
   box-shadow: 0 0 0.5rem rgb(0 0 0 / 15%);

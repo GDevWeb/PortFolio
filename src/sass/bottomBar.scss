@@ -1,24 +1,54 @@
 @import "variables";
 @import "mixins";
 
-#navBar {
+#BottomBar {
     position: fixed;
     bottom: 0;
     right: 0;
     left: 0;
     z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
     width: 100%;
-    background-color: #1b1c1c;
+    background-color: $background-color;
 
-    .container-navIcon {
+    #secondMainContainer {
         display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
-        margin: 1rem;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
 
-        .navIcon {
-            width: 24px;
-            height: auto;
+        #socialLinks {
+            @include flex-center;
+            gap: 1rem;
+            width: 100%;
+
+            a {
+                @include flex-center;
+                gap: 1rem;
+            }
+
+            .icons {
+                width: clamp(2rem, 4vw, 3rem);
+            }
+        }
+
+        #copyright {
+            width: 50%
+        }
+
+        .container-navIcon {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            margin: 1rem;
+
+            .navIcon {
+                width: 24px;
+                height: auto;
+            }
         }
     }
 
@@ -65,4 +95,9 @@
             margin-left: 1rem;
         }
     }
+
+    #footerContainer {
+        width: 100%;
+    }
+
 }

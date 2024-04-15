@@ -5,24 +5,23 @@ function Home() {
   return (
     <div id="homeContainer">
       <div id="homeTitle">
-        <h2>Concepteur et Développeur d'Application Javascript et React</h2>
-          <h3>En recherche d'une alternance bachelor ou C.D.A</h3>
+        <h2>Développeur Web passionné</h2>
       </div>
 
       <div id="homeTextPresentation">
         <article>
-          <h4>Bienvenue sur mon univers numérique !</h4>
+          <h3>Bienvenue sur mon univers numérique !</h3>
 
           <p>
-            Salut, je suis Gaëtan Dammaretz, un développeur frontend passionné,
-            ancien Responsable de la sécurité incendie et conseiller clientèle
-            bancaire. J'ai choisi de suivre ma passion pour le code et la
+            Je suis Gaëtan Dammaretz, un développeur frontend passionné. Ancien
+            Responsable de la sécurité incendie et conseiller clientèle
+            bancaire, j'ai choisi de suivre ma passion pour le code et la
             créativité, plongeant ainsi dans le monde fascinant du développement
             web.
           </p>
           <p>
             Passionné par l'univers du web, ma curiosité et ma soif insatiable
-            de connaissance me poussent à en apprendre davantage.
+            de connaissance me poussent à en apprendre davantage chaque jour.
           </p>
           <p>
             J'ai acquis une solide expertise en HTML, CSS et JavaScript, et j'ai
@@ -30,29 +29,15 @@ function Home() {
             idées.
           </p>
           <p>
-            Explorez mon portfolio pour découvrir des projets qui
-            témoignent de mon engagement envers des expériences web
-            exceptionnelles. Je suis ravi de partager avec vous mes
-            réalisations.
+            Explorez mon portfolio pour découvrir des projets qui témoignent de
+            mon engagement envers des expériences web exceptionnelles. Je suis
+            ravi de partager avec vous mes réalisations.
           </p>
           <p>
-            Je suis actuellement à la recherche de ma première expérience
-            professionnelle dans le domaine du développement web ou d'un contrat
-            de professionnalisation. Passionné par le code et déterminé à faire
-            mes preuves dans le monde professionnel, je suis prêt à relever de
-            nouveaux défis et à contribuer activement à des projets innovants.
-            Si vous êtes à la recherche d'un développeur frontend motivé et
-            créatif, n'hésitez pas à me contacter. Je suis impatient de
-            découvrir de nouvelles opportunités et de contribuer au succès de
-            votre équipe.
-          </p>
-          <p>
-            <Link to="/about">
-              Découvrez-en plus sur mon parcours et mes passions
-            </Link>{" "}
-            ou parcourez mes projets pour voir comment je marie la créativité à
-            la technologie. Prêt à plonger dans l'univers où le code rencontre
-            l'innovation ? Bienvenue dans mon monde numérique !
+            <Link to="/about">Prêt à en savoir plus ?</Link> Découvrez mon
+            parcours et mes passions, ou parcourez mes projets pour voir comment
+            je marie la créativité à la technologie. Bienvenue dans mon monde
+            numérique !
           </p>
         </article>
       </div>

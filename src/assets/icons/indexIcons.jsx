@@ -28,6 +28,7 @@ import iconTrophy from "./iconTrophy.svg";
 import iconTypeScript from "./icon_Typescript.svg";
 import iconUserPlus from "./iconUserPlus.svg";
 import iconUsers from "./iconUsers.svg";
+import iconXMark from "./icon_XMark.svg";
 
 export default{
   iconBars,
@@ -60,4 +61,5 @@ export default{
   iconTypeScript,
   iconUserPlus,
   iconUsers,
+  iconXMark,
 };

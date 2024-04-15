@@ -6,12 +6,13 @@ function Home() {
     <div id="homeContainer">
       <div id="homeTitle">
         <h2>Concepteur et Développeur d'Application Javascript et React</h2>
+          <h3>En recherche d'une alternance bachelor ou C.D.A</h3>
       </div>
-
 
       <div id="homeTextPresentation">
         <article>
-          <h3>Bienvenue sur mon univers numérique !</h3>
+          <h4>Bienvenue sur mon univers numérique !</h4>
+
           <p>
             Salut, je suis Gaëtan Dammaretz, un développeur frontend passionné,
             ancien Responsable de la sécurité incendie et conseiller clientèle
@@ -20,16 +21,30 @@ function Home() {
             web.
           </p>
           <p>
-            Mon terrain de jeu ? L'intersection entre la beauté du design et la
-            puissance du code. J'ai acquis une solide expertise en HTML, CSS, et
-            JavaScript, et j'ai exploré les horizons de React et Node.js pour
-            donner vie à mes idées.
+            Passionné par l'univers du web, ma curiosité et ma soif insatiable
+            de connaissance me poussent à en apprendre davantage.
           </p>
           <p>
-            Explorez mon portfolio pour découvrir des projets captivants qui
+            J'ai acquis une solide expertise en HTML, CSS et JavaScript, et j'ai
+            exploré les horizons de React et Node.js pour donner vie à mes
+            idées.
+          </p>
+          <p>
+            Explorez mon portfolio pour découvrir des projets qui
             témoignent de mon engagement envers des expériences web
-            exceptionnelles. Chaque ligne de code que j'écris raconte une
-            histoire unique, et je suis ravi de la partager avec vous.
+            exceptionnelles. Je suis ravi de partager avec vous mes
+            réalisations.
+          </p>
+          <p>
+            Je suis actuellement à la recherche de ma première expérience
+            professionnelle dans le domaine du développement web ou d'un contrat
+            de professionnalisation. Passionné par le code et déterminé à faire
+            mes preuves dans le monde professionnel, je suis prêt à relever de
+            nouveaux défis et à contribuer activement à des projets innovants.
+            Si vous êtes à la recherche d'un développeur frontend motivé et
+            créatif, n'hésitez pas à me contacter. Je suis impatient de
+            découvrir de nouvelles opportunités et de contribuer au succès de
+            votre équipe.
           </p>
           <p>
             <Link to="/about">

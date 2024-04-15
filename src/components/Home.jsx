@@ -30,7 +30,7 @@ function Home() {
           </p>
           <p>
             Explorez mon portfolio pour découvrir des projets qui témoignent de
-            mon engagement envers des expériences web exceptionnelles. Je suis
+            mon engagement envers des expériences web intéressantes. Je suis
             ravi de partager avec vous mes réalisations.
           </p>
           <p>

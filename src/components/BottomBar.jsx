@@ -106,10 +106,6 @@ function BottomBar() {
               Linkedin
             </a>
           </h5>
-          <div id="copyright">
-            <p>©️{currentYear} Dammaretz Gaëtan - Tous droits réservés</p>
-          </div>
-        </div>
 
         <div className="container-navIcon">
           <img
@@ -121,6 +117,10 @@ function BottomBar() {
           />
         </div>
       </div>
+          <div id="copyright">
+            <p>©️{currentYear} Dammaretz Gaëtan - Tous droits réservés</p>
+          </div>
+        </div>
     </nav>
   );
 }

@@ -1,5 +1,4 @@
 import "../sass/aboutMe.scss";
-import myAvatar from "/images/avatar2.jpg";
 import { Link } from "react-router-dom";
 
 function AboutMe() {
@@ -18,8 +17,8 @@ function AboutMe() {
             incendie et de la banque à celui du développement.
           </p>
           <p>
-            Ma passion pour le code et la créativité m'a conduit à explorer
-            divers horizons, de la conception web à l'implémentation avec des
+            Passionné par le code et la créativité, j'ai exploré divers
+            horizons, de la conception web à l'implémentation avec des
             technologies telles que HTML, CSS, JavaScript, React, et Node.js.
           </p>
           <p>
@@ -38,11 +37,11 @@ function AboutMe() {
             street workout et un passionné des dernières technologies. Mon
             approche du développement web va au-delà de simplement écrire du
             code ; elle vise à harmoniser le design et la fonctionnalité pour
-            créer des expériences utilisateur exceptionnelles.
+            créer des expériences utilisateur intéressantes.
           </p>
 
           <p>
-            <Link to="/contact">Prêt à collaborer ? Contactez-moi ici</Link> et
+            <Link to="/contact">Prêt à collaborer ? Contactez-moi</Link> et
             découvrez comment nous pouvons créer ensemble des expériences web
             mémorables. Je suis passionné par la création de solutions
             innovantes et je suis impatient de discuter de votre prochain projet

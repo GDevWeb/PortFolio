@@ -16,12 +16,15 @@
 
     #secondMainContainer {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-evenly;
         width: 100%;
 
         #socialLinks {
-            @include flex-center;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
             gap: 1rem;
             width: 100%;
 
@@ -36,14 +39,18 @@
         }
 
         #copyright {
-            width: 50%
+            width: 100%
         }
 
         .container-navIcon {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
             display: flex;
             align-items: flex-end;
             justify-content: flex-end;
             margin: 1rem;
+            width: 10%;
 
             .navIcon {
                 width: 24px;

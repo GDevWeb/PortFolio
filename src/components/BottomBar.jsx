@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import getCurrentYear from "../functions/getCurrentYear";
-import "../sass/BottomBar.scss";
+import "../sass/bottomBar.scss";
 import indexIcons from "../assets/icons/indexIcons";
 
 function BottomBar() {

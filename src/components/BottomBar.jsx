@@ -126,3 +126,5 @@ function BottomBar() {
 }
 
 export default BottomBar;
+
+// correct filename bottomBar

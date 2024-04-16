@@ -7,7 +7,7 @@ const hardSkillsArray = [
     content: "Maîtrise des balises et de la structure des pages web.",
     link: "#",
     fileName: "#",
-    linkText: "#",
+    grade: "Avancé",
     category: "frontend",
   },
   {
@@ -16,7 +16,7 @@ const hardSkillsArray = [
     content: "Styles, mises en page, animations et responsivité.",
     link: "#",
     fileName: "#",
-    linkText: "#",
+    grade: "Avancé",
     category: "frontend",
   },
   {
@@ -25,16 +25,17 @@ const hardSkillsArray = [
     content: "Utilisation de Sass pour un CSS plus maintenable et évolutif.",
     link: "#",
     fileName: "#",
-    linkText: "#",
+    grade: "Avancé",
     category: "frontend",
   },
   {
     title: "BULMA",
     icon: Icons.iconBulma,
-    content: "Utilisation du framework CSS Bulma pour un rendu propre et rapide.",
+    content:
+      "Utilisation du framework CSS Bulma pour un rendu propre et rapide.",
     link: "#",
     fileName: "#",
-    linkText: "#",
+    grade: "Intermédiaire",
     category: "frontend",
   },
   {
@@ -43,7 +44,7 @@ const hardSkillsArray = [
     content: "Manipulation du DOM, programmation orientée objet...",
     link: "#",
     fileName: "#",
-    linkText: "#",
+    grade: "Avancé",
     category: "frontend",
   },
   {
@@ -52,7 +53,7 @@ const hardSkillsArray = [
     content: "Pour des animations stylées",
     link: "#",
     fileName: "#",
-    linkText: "#",
+    grade: "Intermédiaire",
     category: "frontend",
   },
   {
@@ -62,7 +63,7 @@ const hardSkillsArray = [
       "Expérience dans l'utilisation de TypeScript pour un développement JavaScript plus robuste. Intégration réussie avec des frameworks comme React.",
     link: "#",
     fileName: "#",
-    linkText: "#",
+    grade: "Intermédiaire",
     category: "tooling",
   },
   {
@@ -71,7 +72,7 @@ const hardSkillsArray = [
     content: "Développement d'interfaces utilisateur dynamiques et réactives.",
     link: "#",
     fileName: "#",
-    linkText: "#",
+    grade: "Intermédiaire",
     category: "frontend",
   },
   {
@@ -80,7 +81,7 @@ const hardSkillsArray = [
     content: "Création de serveurs côté backend avec Node.js.",
     link: "#",
     fileName: "#",
-    linkText: "#",
+    grade: "Débutant",
     category: "backend",
   },
   {
@@ -89,7 +90,7 @@ const hardSkillsArray = [
     content: "Bases de données NoSQL avec MongoDB.",
     link: "#",
     fileName: "#",
-    linkText: "#",
+    grade: "Débutant",
     category: "backend",
   },
   {
@@ -98,7 +99,27 @@ const hardSkillsArray = [
     content: "Construction d'applications web avec le framework Express.js.",
     link: "#",
     fileName: "#",
-    linkText: "#",
+    grade: "Débutant",
+    category: "backend",
+  },
+  {
+    title: "PHP",
+    icon: Icons.iconPHP,
+    content:
+      "Connaissance de base en PHP pour la gestion des formulaires et l'interaction avec les bases de données côté serveur. Capacité à implémenter des fonctionnalités côté serveur dans les applications web.",
+    link: "#",
+    fileName: "#",
+    grade: "Débutant",
+    category: "backend",
+  },
+  {
+    title: "SQL",
+    icon: Icons.iconSQL,
+    content:
+      "Compétences débutantes en SQL pour la gestion des bases de données relationnelles. Capacité à exécuter des requêtes SQL pour interagir avec les données et effectuer des opérations CRUD (Création, Lecture, Mise à jour, Suppression).",
+    link: "#",
+    fileName: "#",
+    grade: "Débutant",
     category: "backend",
   },
   {
@@ -108,7 +129,7 @@ const hardSkillsArray = [
       "Gestion de versions, collaboration et partage de code à travers la plate-forme GitHub. Profil GitHub disponible avec des projets publics et contributions open source.",
     link: "#",
     fileName: "",
-    linkText: "#",
+    grade: "Avancé",
     category: "tooling",
   },
   {
@@ -118,7 +139,7 @@ const hardSkillsArray = [
       "Utilisation de Figma pour la conception d'interfaces utilisateur (UI) et la collaboration dans le processus de développement. Création de maquettes et prototypes interactifs.",
     link: "#",
     fileName: "#",
-    linkText: "#",
+    grade: "Intermédiaire",
     category: "tooling",
   },
 ];

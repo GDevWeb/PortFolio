@@ -37,7 +37,7 @@ function HardSkills() {
         content={hardSkills.content}
         link={hardSkills.link}
         fileName={hardSkills.fileName}
-        linkText={hardSkills.linkText}
+        linkText={hardSkills.grade}
       />
     );
   });

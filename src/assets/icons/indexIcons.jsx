@@ -19,10 +19,12 @@ import iconMicroship from "./iconMicroship.svg";
 import iconMongoDB from "./iconMongoDB.svg";
 import iconNode from "./iconNode.svg";
 import iconPaintBrush from "./iconPaintbrush.svg";
+import iconPHP from "./icon_PHP.svg";
 import iconReact from "./icon_React.svg"
 import iconSass from "./iconSass.svg";
 import iconShield from "./iconShield.svg";
 import iconSliders from "./icon_Sliders.svg";
+import iconSQL from "./icon_SQL.svg";
 import iconTailwind from "./iconTailwind.svg";
 import iconTrophy from "./iconTrophy.svg";
 import iconTypeScript from "./icon_Typescript.svg";
@@ -52,10 +54,12 @@ export default{
   iconMongoDB,
   iconNode,
   iconPaintBrush,
+  iconPHP,
   iconReact,
   iconSass,
   iconShield,
   iconSliders,
+  iconSQL,
   iconTailwind,
   iconTrophy,
   iconTypeScript,

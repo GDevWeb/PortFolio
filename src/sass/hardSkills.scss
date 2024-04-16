@@ -6,6 +6,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 1rem;
+    margin: 5vh 0;
 
     #hardSkillsTitle {
         @include flex-center;
@@ -62,13 +63,20 @@
             }
 
             @media screen and (min-width: 768px) {
-                width: 33%;
+                width: 30%;
                 min-height: 56rem;
             }
 
             @media screen and (min-width: 990px) {
                 width: 25%;
+                min-height: 60rem;
             }
+
+            @media screen and (min-width: 1024px) {
+                width: 20%;
+                min-height: 70rem;
+            }
+
 
             .cardItemTitle {
                 width: 100%;
@@ -92,8 +100,8 @@
 
             p>a.download {
                 display: block;
-                @include boxContainerGlassMorphism(5rem, auto);
                 padding: 1rem;
+                color: $primary-color;
 
                 &:hover {
                     transform: rotate(90deg);

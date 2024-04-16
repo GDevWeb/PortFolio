@@ -1,6 +1,6 @@
 import "../sass/professionalExperience.scss";
 import CardItem from "./CardItem";
-import myResume from "/docs/CVDevWebDammaretzGaëtan.pdf";
+import myResume from "/docs/CV-Dammaretz_Gaêtan_Développeur_Web.pdf";
 
 function ProfessionalExperience() {
   return (

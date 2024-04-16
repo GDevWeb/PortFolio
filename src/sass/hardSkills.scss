@@ -6,6 +6,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 1rem;
+    margin: 5vh 0;
 
     #hardSkillsTitle {
         @include flex-center;
@@ -68,6 +69,7 @@
 
             @media screen and (min-width: 990px) {
                 width: 25%;
+                min-height: 60rem;
             }
 
             .cardItemTitle {
@@ -93,7 +95,7 @@
             p>a.download {
                 display: block;
                 padding: 1rem;
-                color: $primary-hover-color;
+                color: $primary-color;
 
                 &:hover {
                     transform: rotate(90deg);

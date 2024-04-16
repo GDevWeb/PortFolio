@@ -31,7 +31,8 @@ const hardSkillsArray = [
   {
     title: "BULMA",
     icon: Icons.iconBulma,
-    content: "Utilisation du framework CSS Bulma pour un rendu propre et rapide.",
+    content:
+      "Utilisation du framework CSS Bulma pour un rendu propre et rapide.",
     link: "#",
     fileName: "#",
     grade: "Intermédiaire",
@@ -96,6 +97,26 @@ const hardSkillsArray = [
     title: "ExpressJS",
     icon: Icons.iconExpressJs,
     content: "Construction d'applications web avec le framework Express.js.",
+    link: "#",
+    fileName: "#",
+    grade: "Débutant",
+    category: "backend",
+  },
+  {
+    title: "PHP",
+    icon: Icons.iconPHP,
+    content:
+      "Connaissance de base en PHP pour la gestion des formulaires et l'interaction avec les bases de données côté serveur. Capacité à implémenter des fonctionnalités côté serveur dans les applications web.",
+    link: "#",
+    fileName: "#",
+    grade: "Débutant",
+    category: "backend",
+  },
+  {
+    title: "SQL",
+    icon: Icons.iconSQL,
+    content:
+      "Compétences débutantes en SQL pour la gestion des bases de données relationnelles. Capacité à exécuter des requêtes SQL pour interagir avec les données et effectuer des opérations CRUD (Création, Lecture, Mise à jour, Suppression).",
     link: "#",
     fileName: "#",
     grade: "Débutant",

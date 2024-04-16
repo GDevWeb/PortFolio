@@ -63,7 +63,7 @@
             }
 
             @media screen and (min-width: 768px) {
-                width: 33%;
+                width: 30%;
                 min-height: 56rem;
             }
 
@@ -71,6 +71,12 @@
                 width: 25%;
                 min-height: 60rem;
             }
+
+            @media screen and (min-width: 1024px) {
+                width: 20%;
+                min-height: 70rem;
+            }
+
 
             .cardItemTitle {
                 width: 100%;

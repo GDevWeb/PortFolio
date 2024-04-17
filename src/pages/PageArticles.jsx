@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import Articles from "../components/articles/ArticlesCopy";
+import Articles from "../components/articles/Articles";
 
 
 function PageArticles() {

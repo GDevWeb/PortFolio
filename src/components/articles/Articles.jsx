@@ -23,7 +23,7 @@ function Articles() {
   return (
     <div id="articlesContainer">
       <div id="articleTitle">
-        <h2>Articles</h2>
+        <h1>Articles</h1>
       </div>
       {articlePublication}
     </div>

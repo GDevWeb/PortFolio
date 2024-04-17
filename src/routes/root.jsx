@@ -9,6 +9,7 @@ import PageHardSkills from "../pages/PageHardSkills";
 import PageProjects from "../pages/PageProjects";
 import PageArticles from "../pages/PageArticles";
 import PageSingleArticle from "../pages/PageSingleArticle";
+import PageSingleProject from "../pages/PageSingleProject";
 import PageContact from "../pages/PageContact";
 
 export default function Root() {
@@ -25,7 +26,10 @@ export default function Root() {
           <Route path="/parcours" element={<PageParcours />} />
           <Route path="/softskills" element={<PageSoftSkills />} />
           <Route path="/hardskills" element={<PageHardSkills />} />
-          <Route path="/projects" element={<PageProjects />} />
+          <Route path="/projects/*" element={<PageProjects />}>
+          <Route path=":id" element={<PageSingleProject/>}/>
+            </Route>
+
           <Route path="/articles/*" element={<PageArticles />}>
             <Route path=":id" element={<PageSingleArticle />} />
           </Route>

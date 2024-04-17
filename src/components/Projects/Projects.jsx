@@ -9,9 +9,8 @@ function Projects() {
         key={project.title}
         title={project.title}
         icon={project.image}
-        content={project.description}
         link={project.link}
-        linkText={"voir le projet"}
+        linkText={"Voir le projet"}
       />
     );
   });

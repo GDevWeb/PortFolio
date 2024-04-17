@@ -38,4 +38,4 @@ function Projects() {
 
 export default Projects;
 
-// rework 
+// rework style

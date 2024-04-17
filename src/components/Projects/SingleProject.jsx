@@ -38,3 +38,5 @@ function SingleProject() {
 }
 
 export default SingleProject;
+
+// rework add sections  résumé - technologie - améliorations

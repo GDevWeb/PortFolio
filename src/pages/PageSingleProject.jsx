@@ -5,7 +5,7 @@ import SingleProject from "../components/Projects/SingleProject";
 function PageSingleProject() {
   const { id } = useParams();
 
-  const project = projectsArray.find((project) => project.id === (id, 10));
+  const project = projectsArray.find((project) => project.id === parseInt(id, 10));
 
   if (!project) {
     return <p>Projet non trouvé !</p>;

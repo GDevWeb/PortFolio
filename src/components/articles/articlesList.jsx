@@ -1,6 +1,4 @@
 import apprenticeJourney from "/images/apprentice_journey.jpg?url";
-import apprenticeJourney2 from "/images/apprentice_journey2.jpg?url";
-import seminaryWeek from "/images/juniaxp_seminary-week.jpg?url";
 
 const articlesList = [
   {

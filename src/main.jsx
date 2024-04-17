@@ -1,9 +1,6 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.scss";
 import "./app.scss";
 import Root from "./routes/root";
@@ -18,6 +15,7 @@ import PageSingleArticle from "./pages/PageSingleArticle";
 import PageContact from "./pages/PageContact";
 import PageError from "./pages/PageError";
 import postsPageLoader from "./functions/postsPageLoader";
+import PageSingleProject from "./pages/PageSingleProject";
 
 const router = createBrowserRouter([
   {
@@ -47,7 +45,18 @@ const router = createBrowserRouter([
       },
       {
         path: "projects",
-        element: <PageProjects/>
+        element: <PageProjects />,
+        loader: postsPageLoader,
+        children: [
+          {
+            path: "",
+            element: <PageProjects />,
+          },
+          {
+            path: ":id",
+            element: <PageSingleProject />,
+          },
+        ],
       },
       {
         path: "articles",
@@ -55,7 +64,7 @@ const router = createBrowserRouter([
         loader: postsPageLoader,
         children: [
           {
-            path: "", //derniers articles
+            path: "",
             element: <PageArticles />,
           },
           {

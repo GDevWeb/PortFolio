@@ -1,16 +1,17 @@
-import "../../sass/projects.scss";
 import projectsArray from "./projectsArray";
-import CardItem from "../../components/CardItem";
+import ProjectItem from "./ProjectItem";
+import illustrationDefault from "/images/illustrationDefault.jpg";
+import "../../sass/projects.scss";
 
 function Projects() {
   const projectList = projectsArray.map((project) => {
+    const {title, picture} = project;
     return (
-      <CardItem
-        key={project.title}
-        title={project.title}
-        icon={project.image}
-        link={project.link}
-        linkText={"Voir le projet"}
+      <ProjectItem
+        key={project.id}
+        id={project.id}
+        picture={picture ? project.picture : illustrationDefault}
+        title={title}
       />
     );
   });

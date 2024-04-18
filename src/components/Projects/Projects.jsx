@@ -23,7 +23,7 @@ function Projects() {
       </div>
       <article>
         <h3>Retrouver ma liste d'une sélection de projets</h3>
-        <p>
+        <p className="projectIntroduction">
           Découvrez ci-dessous quelques-uns des projets sur lesquels j'ai
           travaillé. Chacun d'eux représente une expérience unique dans laquelle
           j'ai mis en œuvre mes compétences en développement web pour créer des

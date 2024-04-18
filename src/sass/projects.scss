@@ -18,6 +18,10 @@
   article {
     @include boxContainerGlassMorphism(80%, auto);
     padding: 1rem;
+
+    p.projectIntroduction {
+      text-wrap: balance;
+    }
   }
 
   #filter {

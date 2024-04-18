@@ -10,6 +10,7 @@ Bienvenue sur le repository de mon portfolio personnel. Ce projet a été conçu
   - [Technologies Employées 🛠️](#technologies-employées-️)
   - [Étapes du Projet 📝](#étapes-du-projet-)
   - [Accès au Portfolio 🌐](#accès-au-portfolio-)
+  - [Versions 🔄](#versions-)
   - [**Note:** Ce portfolio est un projet évolutif. Je m'efforce continuellement d'améliorer son contenu et son expérience utilisateur. N'hésitez pas à revenir régulièrement pour découvrir les mises à jour et les nouveaux projets !](#note-ce-portfolio-est-un-projet-évolutif-je-mefforce-continuellement-daméliorer-son-contenu-et-son-expérience-utilisateur-nhésitez-pas-à-revenir-régulièrement-pour-découvrir-les-mises-à-jour-et-les-nouveaux-projets-)
 
 ## Historique 🚀
@@ -37,5 +38,10 @@ Ce projet a émergé de la réflexion sur la nécessité d'avoir une vitrine en 
 
 Le portfolio est accessible en ligne à l'adresse suivante : [Portfolio GDevWeb](https://gdevweb.vercel.app/)
 
-----
+## Versions 🔄
+
+- **Version 1.0.0 (14 avril 2024) :** Ajout de la section Projets, retravaillage du texte et du style.
+
+---
+
 ## **Note:** Ce portfolio est un projet évolutif. Je m'efforce continuellement d'améliorer son contenu et son expérience utilisateur. N'hésitez pas à revenir régulièrement pour découvrir les mises à jour et les nouveaux projets !

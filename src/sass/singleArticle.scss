@@ -26,20 +26,31 @@
   }
 
   figure {
-    width: 80%;
-    margin: auto;
-
-    @media screen and (min-width: 768px) {
-        width: 60%;
-      }
-    
-      @media screen and (min-width: 990px) {
-        width: 25%;
-      }
-    
+    @include flex-center;
+    width: 100%;
+    height: auto;
 
     img {
-    @include imgResponsive();
+      @include imgResponsive(80%);
+
+
+      @media screen and (min-width: 768px) {
+        @include imgResponsive(60%);
+
+      }
+
+      @media screen and (min-width: 990px) {
+        @include imgResponsive(50%);
+      }
+
+      @media screen and (min-width: 1024px) {
+        @include imgResponsive(40%);
+      }
+
+      @media screen and (min-width: 1440px) {
+        @include imgResponsive(30%);
+      }
+
     }
   }
 
@@ -47,28 +58,28 @@
     width: 100%;
     padding: 1rem;
     min-height: 25rem;
-    
-    
+
+
     @media screen and (min-width: 768px) {
       width: 60%;
     }
-    
-    
-    p{ 
+
+
+    p {
       max-height: 250px;
       overflow-y: scroll;
       text-align: center;
       text-wrap: balance;
-        
-        @media screen and (min-width: 768px) {
-          max-height: 350px;
-        }
-      
-        @media screen and (min-width: 990px) {
-          max-height: 450px;
-          overflow: auto;
-        }
-  
+
+      @media screen and (min-width: 768px) {
+        max-height: 350px;
+      }
+
+      @media screen and (min-width: 990px) {
+        max-height: 450px;
+        overflow: auto;
+      }
+
     }
   }
 

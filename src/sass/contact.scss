@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: space-evenly;
     @include boxContainerGlassMorphism(100%, auto);
+    margin: 5vh auto 10vh;
 
     h2 {
         width: 100%;

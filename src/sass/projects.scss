@@ -2,114 +2,52 @@
 @import "mixins";
 
 #projectsContainer {
-    display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+  margin: 5vh auto 10vh;
+
+  #projectTitle {
+    @include flex-center;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     gap: 1rem;
-    margin: 5vh 0;
+    width: 100%;
+  }
 
-    #projectTitle {
-        @include flex-center;
-        flex-wrap: wrap;
-        gap: 1rem;
-        width: 100%;
+  article {
+    @include boxContainerGlassMorphism(80%, auto);
+    padding: 1rem;
+  }
+
+  #filter {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: flex-end;
+    width: 100%;
+
+    #filterName {
+      font-weight: bolder;
     }
 
-    article {
-        @include boxContainerGlassMorphism(80%, auto);
-        padding: 1rem;
-        ;
+    #checkBoxesFilterContainer {
+      display: flex;
+      gap: 1rem;
+      font-size: 2rem;
+      font-weight: bolder;
+      text-transform: capitalize;
     }
+  }
 
-    #filter {
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        justify-content: flex-end;
-        width: 100%;
-
-        #filterName {
-            font-weight: bolder
-        }
-
-        #checkBoxesFilterContainer {
-            display: flex;
-            gap: 1rem;
-            font-size: 2rem;
-            font-weight: bolder;
-            text-transform: capitalize;
-        }
-    }
-
-    #projectsList {
-        @include flex-center;
-        flex-wrap: wrap;
-        gap: 1.5rem;
-
-        .cardItem {
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            gap: 1rem;
-            @include boxContainerGlassMorphism(80%, auto);
-            padding: 0.5rem;
-
-            &:hover {
-                transform: scale(0.9);
-                background-color: $primary-hover-color;
-                background-color: $link-hover-light;
-                transition: all 0.2s ease-in-out;
-            }
-
-            @media screen and (min-width: 768px) {
-                width: 33%;
-                min-height: 50rem;
-            }
-
-            @media screen and (min-width: 990px) {
-                width: 25%;
-                min-height: 70rem;
-            }
-
-            @media screen and (min-width: 1440px) {
-                width: 25%;
-                min-height: 80rem;
-            }
-
-            .cardItemTitle {
-                width: 100%;
-                padding: 1rem;
-            }
-
-
-            img {
-                width: 80%;
-                height: auto;
-                background-position: center;
-                background-size: cover;
-                border-radius: 1rem;
-                
-                &:hover {
-                    transform: scale(1.5);
-                    @include logo-hover-shadow($link-active);
-                    transition: transform 0.2s ease-in-out;
-                }
-    
-            }
-
-            .cardItemContent {
-                @include flex-center;
-                width: 100%;
-
-            }
-
-        }
-
-    }
+  #projectsList {
+    @include flex-center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
 }
 
 // Animation lors du filtrage :
 @media screen and (min-width: 768px) {
-    @include fadeInEffect;
+  @include fadeInEffect;
 }

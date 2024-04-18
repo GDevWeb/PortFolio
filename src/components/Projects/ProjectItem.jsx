@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "../../sass/projectItem.scss"
 
 function ProjectItem({ id, title, picture, description, category }) {
   return (

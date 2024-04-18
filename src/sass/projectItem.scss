@@ -5,7 +5,6 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border-radius: 1rem;
     @include boxContainerGlassMorphism(80%, auto);
     padding: 1rem;
 

@@ -1,0 +1,22 @@
+@import "variables";
+@import "mixins";
+
+.projectItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    @include boxContainerGlassMorphism(80%, auto);
+    padding: 1rem;
+
+
+    figure.projectPicture{
+        width: 80%;
+        height: auto;
+        margin: auto;
+
+        img{
+            border-radius: 1rem;
+        }
+    }
+
+}

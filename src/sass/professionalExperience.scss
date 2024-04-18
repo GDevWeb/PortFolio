@@ -5,7 +5,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 5vh;
+    margin: 5vh auto 10vh;
 
     #professionalExperienceTitle {
         @include flex-center;

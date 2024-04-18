@@ -18,7 +18,7 @@ function SingleProject() {
         <h2>{title}</h2>
       </div>
       <figure>
-        <img src={picture ? picture : illustrationDefault} alt="" />
+        <img src={picture ? picture : illustrationDefault} alt={`illustration du projet ${title}`} />
       </figure>
       <div id="articleContent">
         <h3>Résumé</h3>

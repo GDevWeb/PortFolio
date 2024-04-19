@@ -127,4 +127,7 @@ function BottomBar() {
 
 export default BottomBar;
 
-// correct merge develop into main
+/* 
+MEttre en place un eventListener sur windows lors du clic dans window => fermeture de la barre de navigation
+
+*/

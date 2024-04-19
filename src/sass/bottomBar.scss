@@ -11,7 +11,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    @include boxContainerGlassMorphism(100%, 15vh);
+    @include boxContainerGlassMorphism(100%, auto);
 
     #secondMainContainer {
         display: flex;

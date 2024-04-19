@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import getCurrentYear from "../functions/getCurrentYear";
 import "../sass/bottomBar.scss";
@@ -8,6 +8,23 @@ function BottomBar() {
   // 1.State :
   const [toggleBottomBar, setToggleBottomBar] = useState(false);
   const currentYear = getCurrentYear();
+
+  //1.a. Close the BottomBar onclick on window :
+  useEffect(() => {
+    const handleWindowClick = (e) => {
+      if (toggleBottomBar) {
+        if (!document.getElementById("BottomBar").contains(e.target)) {
+          setToggleBottomBar(false);
+        }
+      }
+    };
+
+    window.addEventListener("click", handleWindowClick);
+
+    return () => {
+      window.removeEventListener("clikc", handleWindowClick);
+    };
+  }, [toggleBottomBar]);
 
   // 2.Comportement:
   const handleBottomBar = () => {
@@ -107,20 +124,20 @@ function BottomBar() {
             </a>
           </h5>
 
-        <div className="container-navIcon">
-          <img
-            onClick={handleBottomBar}
-            src={toggleBottomBar ? indexIcons.iconXMark : indexIcons.iconBars}
-            alt="icon barre de navigation"
-            className="navIcon"
-            aria-label="bouton de la barre de navigation"
-          />
-        </div>
-      </div>
-          <div id="copyright">
-            <p>©️{currentYear} Dammaretz Gaëtan - Tous droits réservés</p>
+          <div className="container-navIcon">
+            <img
+              onClick={handleBottomBar}
+              src={toggleBottomBar ? indexIcons.iconXMark : indexIcons.iconBars}
+              alt="icon barre de navigation"
+              className="navIcon"
+              aria-label="bouton de la barre de navigation"
+            />
           </div>
         </div>
+        <div id="copyright">
+          <p>©️{currentYear} Dammaretz Gaëtan - Tous droits réservés</p>
+        </div>
+      </div>
     </nav>
   );
 }

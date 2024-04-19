@@ -15,8 +15,7 @@ header {
   @include flex-center;
   flex-wrap: wrap;
   width: 100%;
-  min-height: 10vh;
-  background-color: $background-color;
+  height: 15vh;
 
   h1 {
     width: 100%;

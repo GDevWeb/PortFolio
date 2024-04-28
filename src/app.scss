@@ -11,20 +11,6 @@
   background: $background-gradient-color;
 }
 
-header {
-  @include flex-center;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 15vh;
-
-  h1 {
-    width: 100%;
-    text-transform: uppercase;
-    font-weight: bolder;
-  }
-}
-
-
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     @include rotate-animation;

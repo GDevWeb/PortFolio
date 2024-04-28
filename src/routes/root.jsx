@@ -15,9 +15,7 @@ import PageContact from "../pages/PageContact";
 export default function Root() {
   return (
     <>
-      <header>
-        <Header />
-      </header>
+      <Header />
       <main>
         <Routes>
           <Route path="/" element={<PageHome />} />
@@ -30,7 +28,7 @@ export default function Root() {
             <Route path=":id" element={<PageSingleProject />} />
           </Route>
           <Route path="projects/:id" element={<PageSingleProject />} />
-          
+
           <Route path="/articles/*" element={<PageArticles />}>
             <Route path=":id" element={<PageSingleArticle />} />
           </Route>

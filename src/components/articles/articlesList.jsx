@@ -5,7 +5,7 @@ const articlesList = [
   {
     id: 0,
     picture: apprenticeJourney,
-    title: "À la recherche d'un contrat de professionnalisation",
+    title: "À la recherche d'une alternance",
     author: "GDevWeb",
     content: (
       <>

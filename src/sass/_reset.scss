@@ -9,6 +9,8 @@
 *,
 *::before,
 *::after {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -24,6 +26,18 @@ body {
     font-size: 1.6rem;
     color: $light-text-color;
 }
+
+h1,
+h2,
+h3,
+p {
+    text-wrap: pretty;
+}
+
+article>p {
+    text-wrap: balance;
+}
+
 
 img,
 video,

@@ -1,46 +1,116 @@
 import { Link } from "react-router-dom";
 import "../sass/home.scss";
+import myAvatar from "../../public/images/avatar2.jpg";
+import indexImageProjects from "../../public/images/projects/indexImageProjects";
+import imgApprenticeJourney from "../../public/images/apprentice_journey.jpg";
 
 function Home() {
   return (
     <div id="homeContainer">
-      <div id="homeTitle">
-        <h2>Développeur Web passionné</h2>
-      </div>
+      <section className="intro-section">
+        <h2>Bienvenue sur mon portFolio</h2>
+        <p>
+          Explorez mes projets et découvrez mon expertise en développement web
+          frontend.
+        </p>
+        <button className="cta-button">
+          <Link to="/projects">Voir mes réalisations</Link>
+        </button>
+      </section>
+      <section className="about-me-section">
+        <h2>À Propos de Moi</h2>
+        <p>
+          Découvrez mon parcours, mes compétences et mes passions en tant que
+          développeur web.
+        </p>
+        <button className="cta-button">
+          <Link to="/about">En savoir plus</Link>
+        </button>
+      </section>
 
-      <div id="homeTextPresentation">
-        <article>
-          <h3>Bienvenue sur mon univers numérique !</h3>
+      <section className="contact-section">
+        <h2>Contactez-moi</h2>
+        <p>
+          Besoin de plus d'informations ou envie de discuter de votre prochain
+          projet ? Contactez-moi dès maintenant !
+        </p>
+        <button className="cta-button">
+          <Link to="/contact">Me contacter</Link>
+        </button>
+      </section>
 
+      <section className="portfolio-section" id="portfolio">
+        <h2>Projets Récents</h2>
+        <div className="project-card">
+          <h3>PassionGuitar</h3>
+          <img src={indexImageProjects.imagePassionGuitar} alt="Projet 1" />
           <p>
-            Je suis Gaëtan Dammaretz, un développeur frontend passionné. Ancien
-            Responsable de la sécurité incendie et conseiller clientèle
-            bancaire, j'ai choisi de suivre ma passion pour le code et la
-            créativité, plongeant ainsi dans le monde fascinant du développement
-            web.
+            PassionGuitar est un site vitrine que j'ai développé sur demande
+            d'un client passionné de guitare.
           </p>
-          <p>
-            Passionné par l'univers du web, ma curiosité et ma soif insatiable
-            de connaissance me poussent à en apprendre davantage chaque jour.
-          </p>
-          <p>
-            J'ai acquis une solide expertise en HTML, CSS et JavaScript, et j'ai
-            exploré les horizons de React et Node.js pour donner vie à mes
-            idées.
-          </p>
-          <p>
-            Explorez mon portfolio pour découvrir des projets qui témoignent de
-            mon engagement envers des expériences web intéressantes. Je suis
-            ravi de partager avec vous mes réalisations.
-          </p>
-          <p>
-            <Link to="/about">Prêt à en savoir plus ?</Link> Découvrez mon
-            parcours et mes passions, ou parcourez mes projets pour voir comment
-            je marie la créativité à la technologie. Bienvenue dans mon monde
-            numérique !
-          </p>
-        </article>
-      </div>
+          <button className="cta-button">
+            <a href={"projects/0"} className="cta-button">
+              Découvrir
+            </a>
+          </button>
+        </div>
+        <div className="project-card">
+          <h3>Mon portfolio</h3>
+          <img src={indexImageProjects.imagePortFolio} alt="Projet 2" />
+          <p>Mon portfolio en perpétuel amélioration.</p>
+          <button className="cta-button">
+            <a href={"projects/3"} className="cta-button">
+              Découvrir
+            </a>
+          </button>
+        </div>
+      </section>
+
+      <section className="id-section">
+        <div className="id-card">
+          <img src={myAvatar} alt="Ma photo" width="200px" />
+          <h1>Gaëtan Dammaretz</h1>
+          <h2>Développeur web</h2>
+          <div className="content">
+            <article>
+              <p>
+                Bienvenue sur mon univers numérique ! Je suis passionné par le
+                développement web et j'ai acquis une solide expertise en HTML,
+                CSS, JavaScript et React.
+              </p>
+              <p>Je reconnais un attrait pour l'U.I. et l'U.X</p>
+              <p>
+                Curieux et avide de connaissances, j'explore sans cesse de
+                nouveaux horizons dans le domaine du web.
+              </p>
+              <p>
+                Mon parcours professionnel m'a permis d'explorer différents
+                domaines, mais c'est dans le développement web que je trouve ma
+                véritable passion.
+              </p>
+              <p>
+                Explorez mon portfolio pour découvrir mes projets et voir
+                comment je marie la créativité à la technologie.
+              </p>
+              <p>
+                <Link to="/about">En savoir plus sur moi</Link>
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section className="articles-section">
+        <h2 className="title-section">Derniers articles</h2>
+        <div className="article-card">
+          <h3>À la recherche d'une alternance</h3>
+          <img src={imgApprenticeJourney} alt="image article" />
+          <p>Recherche alternance</p>
+          <button className="cta-button">
+            <Link to="articles/0">Découvrir</Link>
+          </button>
+        </div>
+      </section>
     </div>
   );
 }

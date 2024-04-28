@@ -38,6 +38,14 @@
     }
   }
 
+  .intro-section,
+  .about-me-section,
+  .contact-section,
+  .id-section {
+    @include fillUpAnimation();
+  }
+
+
   // Sections Portfolio et ID
   .portfolio-section,
   .id-section {
@@ -53,9 +61,18 @@
       gap: 1rem;
       padding: 1rem;
       @include boxContainerGlassMorphism(100%, auto);
+      @include fillUpAnimation();
 
       img {
         @include imgResponsive(60%, auto);
+      }
+
+      &:hover {
+        color: #fff;
+
+        &::before {
+          height: 180%;
+        }
       }
     }
   }
@@ -75,7 +92,6 @@
     }
 
     .content {
-
       p {
         margin: 1rem auto;
       }
@@ -105,6 +121,7 @@
       gap: 1rem;
       padding: 1rem;
       @include boxContainerGlassMorphism(100%, auto);
+      @include fillUpAnimation();
 
       @media screen and (min-width: 769px) {
         flex-basis: 30%;

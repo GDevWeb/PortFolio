@@ -25,6 +25,18 @@ body {
     color: $light-text-color;
 }
 
+h1,
+h2,
+h3,
+p {
+    text-wrap: pretty;
+}
+
+article>p {
+    text-wrap: pretty;
+}
+
+
 img,
 video,
 svg {

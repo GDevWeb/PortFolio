@@ -9,20 +9,24 @@ function BottomBar() {
   const [toggleBottomBar, setToggleBottomBar] = useState(false);
   const currentYear = getCurrentYear();
 
-  //1.a. Close the BottomBar onclick on window :
+  //1.a.Effect to handle closing BottomBar when a click is detected outside it
   useEffect(() => {
     const handleWindowClick = (e) => {
+      // Check if the click is outside hte BottomBar
       if (toggleBottomBar) {
         if (!document.getElementById("BottomBar").contains(e.target)) {
+          // Close the BottomBar if the click is outside it
           setToggleBottomBar(false);
         }
       }
     };
 
+    // Add event listener for window click
     window.addEventListener("click", handleWindowClick);
 
+    // My cleanUp function to remove the event
     return () => {
-      window.removeEventListener("clikc", handleWindowClick);
+      window.removeEventListener("click", handleWindowClick);
     };
   }, [toggleBottomBar]);
 

@@ -2,51 +2,65 @@
 @import "mixins";
 
 #homeContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 5vh auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 400px repeat(2, 1fr);
+  gap: 1rem;
+  min-height: 60vh;
+  max-width: 1440px;
+  @include boxContainerGlassMorphism(100%, auto);
+  margin: auto;
 
-  #homeTitle {
-    @include flex-center;
+  // Sections principales
+  .intro-section,
+  .about-me-section,
+  .contact-section,
+  .portfolio-section,
+  .id-section {
+    display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    width: 100%;
-
-    h2, h3{
-      width: 100%;
-    }
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+    border-radius: 1rem;
+    @include boxContainerGlassMorphism(100%, auto);
   }
 
-  #homeTextPresentation {
+  // Sections Portfolio et ID
+  .portfolio-section,
+  .id-section {
+    grid-column: span 1;
+    @include boxContainerGlassMorphism(100%, auto);
+
+    .project-card {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 1rem;
+      @include boxContainerGlassMorphism(100%, auto);
+
+      img {
+        @include imgResponsive(60%, auto)
+      }
+    }
+
+  }
+
+  .id-section {
+    grid-column: span 2;
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 80%;
+    justify-content: space-evenly;
 
-    @media screen and (min-width: 768px) {
-      width: 45%;
-    }
-
-    @media screen and (min-width: 1440px) {
-      align-items: flex-start;
-      
-    }
-
-
-    article {
-      min-height: 400px;
-      padding: 1rem;
-      // overflow-y: scroll;
-
-      @media screen and (min-width: 1350px) {
-        overflow-y: visible;
-      }
-
-      p {
-        width: 100%;
-        text-align: left;
-      }
+    img {
+      display: inline-block;
+      align-self: flex-end;
+      justify-self: end;
+      @include imgResponsive(25%, auto);
+      border-radius: 25%;
     }
   }
 }

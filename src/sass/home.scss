@@ -2,21 +2,27 @@
 @import "mixins";
 
 #homeContainer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 400px repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   min-height: 60vh;
   max-width: 1440px;
   @include boxContainerGlassMorphism(100%, auto);
   margin: auto;
 
+  @media screen and (min-width: 769px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 400px repeat(2, 1fr);
+  }
+
   // Sections principales
   .intro-section,
   .about-me-section,
   .contact-section,
   .portfolio-section,
-  .id-section {
+  .id-section,
+  .articles-section {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -25,6 +31,11 @@
     padding: 1rem;
     border-radius: 1rem;
     @include boxContainerGlassMorphism(100%, auto);
+    width: 100%;
+
+    @media screen and (min-width: 769px) {
+      flex-basis: 30%;
+    }
   }
 
   // Sections Portfolio et ID
@@ -61,6 +72,39 @@
       justify-self: end;
       @include imgResponsive(25%, auto);
       border-radius: 25%;
+    }
+  }
+
+  .articles-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 769px) {
+      grid-column: span 3;
+      align-items: start;
+    }
+
+    .title-section {
+      width: 100%;
+    }
+
+    .article-card {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 1rem;
+      @include boxContainerGlassMorphism(100%, auto);
+
+      @media screen and (min-width: 769px) {
+        flex-basis: 30%;
+      }
+
+      img {
+        @include imgResponsive(60%, auto)
+      }
     }
   }
 }

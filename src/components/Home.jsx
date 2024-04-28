@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import "../sass/home.scss";
 import myAvatar from "../../public/images/avatar2.jpg";
-import imageProject from "../../public/images/projects/indexImageProjects";
 import indexImageProjects from "../../public/images/projects/indexImageProjects";
 
 function Home() {
@@ -73,8 +72,9 @@ function Home() {
               <p>
                 Bienvenue sur mon univers numérique ! Je suis passionné par le
                 développement web et j'ai acquis une solide expertise en HTML,
-                CSS, JavaScript et React. Je reconnais un attrait pour l'U.I.
+                CSS, JavaScript et React.
               </p>
+              <p>Je reconnais un attrait pour l'U.I. et l'U.X</p>
               <p>
                 Curieux et avide de connaissances, j'explore sans cesse de
                 nouveaux horizons dans le domaine du web.
@@ -93,6 +93,40 @@ function Home() {
               </p>
             </article>
           </div>
+        </div>
+      </section>
+
+      <section className="articles-section">
+        <h2 className="title-section">Derniers articles</h2>
+        <div className="article-card">
+          <h3>Article 1</h3>
+          <img src={indexImageProjects.imagePassionGuitar} alt="Projet 2" />
+          <p>Une brève description de l'article.</p>
+          <button className="cta-button">
+            <a href={"#"} className="cta-button">
+              Découvrir
+            </a>
+          </button>
+        </div>
+        <div className="article-card">
+          <h3>Article 2</h3>
+          <img src={indexImageProjects.imagePassionGuitar} alt="Projet 2" />
+          <p>Une brève description de l'article.</p>
+          <button className="cta-button">
+            <a href={"#"} className="cta-button">
+              Découvrir
+            </a>
+          </button>
+        </div>
+        <div className="article-card">
+          <h3>Article 3</h3>
+          <img src={indexImageProjects.imagePassionGuitar} alt="Projet 2" />
+          <p>Une brève description de l'article.</p>
+          <button className="cta-button">
+            <a href={"#"} className="cta-button">
+              Découvrir
+            </a>
+          </button>
         </div>
       </section>
     </div>

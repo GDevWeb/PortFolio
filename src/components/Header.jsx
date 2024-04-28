@@ -1,5 +1,4 @@
 import "../sass/header.scss";
-import myAvatar from "../../public/images/avatar2.jpg";
 function Header() {
   // 1.State:
 
@@ -7,16 +6,12 @@ function Header() {
 
   // 3.Render:
   return (
-    <div id="headerContainer">
-      <figure id="avatar">
-        <img src={myAvatar} alt="ma phot de profil" className="avatar"/>
-      </figure>
-
+    <header>
       <div id="headerText">
         <h1>Dammaretz Gaëtan</h1>
         <h2>Développeur Web</h2>
       </div>
-    </div>
+    </header>
   );
 }
 

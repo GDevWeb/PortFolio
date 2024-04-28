@@ -9,6 +9,8 @@
 *,
 *::before,
 *::after {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -33,7 +35,7 @@ p {
 }
 
 article>p {
-    text-wrap: pretty;
+    text-wrap: balance;
 }
 
 

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "../sass/home.scss";
 import myAvatar from "../../public/images/avatar2.jpg";
 import indexImageProjects from "../../public/images/projects/indexImageProjects";
+import imgApprenticeJourney from "../../public/images/apprentice_journey.jpg";
 
 function Home() {
   return (
@@ -13,7 +14,7 @@ function Home() {
           frontend.
         </p>
         <button className="cta-button">
-          <Link to="/contact">Voir mes réalisations</Link>
+          <Link to="/projects">Voir mes réalisations</Link>
         </button>
       </section>
       <section className="about-me-section">
@@ -34,28 +35,31 @@ function Home() {
           projet ? Contactez-moi dès maintenant !
         </p>
         <button className="cta-button">
-          <Link to="/about">Me contacter</Link>
+          <Link to="/contact">Me contacter</Link>
         </button>
       </section>
 
       <section className="portfolio-section" id="portfolio">
         <h2>Projets Récents</h2>
         <div className="project-card">
-          <h3>Projet 1</h3>
+          <h3>PassionGuitar</h3>
           <img src={indexImageProjects.imagePassionGuitar} alt="Projet 1" />
-          <p>Une brève description du projet 1.</p>
+          <p>
+            PassionGuitar est un site vitrine que j'ai développé sur demande
+            d'un client passionné de guitare.
+          </p>
           <button className="cta-button">
-            <a href={"#"} className="cta-button">
+            <a href={"projects/0"} className="cta-button">
               Découvrir
             </a>
           </button>
         </div>
         <div className="project-card">
-          <h3>Projet 2</h3>
-          <img src={indexImageProjects.imagePassionGuitar} alt="Projet 2" />
-          <p>Une brève description du projet 2.</p>
+          <h3>Mon portfolio</h3>
+          <img src={indexImageProjects.imagePortFolio} alt="Projet 2" />
+          <p>Mon portfolio en perpétuel amélioration.</p>
           <button className="cta-button">
-            <a href={"#"} className="cta-button">
+            <a href={"projects/3"} className="cta-button">
               Découvrir
             </a>
           </button>
@@ -99,33 +103,11 @@ function Home() {
       <section className="articles-section">
         <h2 className="title-section">Derniers articles</h2>
         <div className="article-card">
-          <h3>Article 1</h3>
-          <img src={indexImageProjects.imagePassionGuitar} alt="Projet 2" />
-          <p>Une brève description de l'article.</p>
+          <h3>À la recherche d'une alternance</h3>
+          <img src={imgApprenticeJourney} alt="image article" />
+          <p>Recherche alternance</p>
           <button className="cta-button">
-            <a href={"#"} className="cta-button">
-              Découvrir
-            </a>
-          </button>
-        </div>
-        <div className="article-card">
-          <h3>Article 2</h3>
-          <img src={indexImageProjects.imagePassionGuitar} alt="Projet 2" />
-          <p>Une brève description de l'article.</p>
-          <button className="cta-button">
-            <a href={"#"} className="cta-button">
-              Découvrir
-            </a>
-          </button>
-        </div>
-        <div className="article-card">
-          <h3>Article 3</h3>
-          <img src={indexImageProjects.imagePassionGuitar} alt="Projet 2" />
-          <p>Une brève description de l'article.</p>
-          <button className="cta-button">
-            <a href={"#"} className="cta-button">
-              Découvrir
-            </a>
+            <Link to="articles/0">Découvrir</Link>
           </button>
         </div>
       </section>

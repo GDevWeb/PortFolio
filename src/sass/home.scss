@@ -50,14 +50,14 @@
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-evenly;
+      gap: 1rem;
       padding: 1rem;
       @include boxContainerGlassMorphism(100%, auto);
 
       img {
-        @include imgResponsive(60%, auto)
+        @include imgResponsive(60%, auto);
       }
     }
-
   }
 
   .id-section {
@@ -72,6 +72,13 @@
       justify-self: end;
       @include imgResponsive(25%, auto);
       border-radius: 25%;
+    }
+
+    .content {
+
+      p {
+        margin: 1rem auto;
+      }
     }
   }
 
@@ -95,6 +102,7 @@
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-evenly;
+      gap: 1rem;
       padding: 1rem;
       @include boxContainerGlassMorphism(100%, auto);
 
@@ -103,7 +111,7 @@
       }
 
       img {
-        @include imgResponsive(60%, auto)
+        @include imgResponsive(60%, auto);
       }
     }
   }

@@ -41,13 +41,23 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: $button-background-dark;
+  background-color: $cta-button;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 
+// button CTA:
+
+button.cta-button>a {
+  color: antiquewhite;
+}
+
+button.cta-button>a:hover {
+  color: $link-active;
+}
+
 button:hover {
-  @include button-hover($primary-color);
+  @include button-hover($cta-button-hover);
 }
 
 button:focus,

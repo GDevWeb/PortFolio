@@ -1,0 +1,92 @@
+@import "variables";
+@import "mixins";
+
+#aboutMeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 5vh auto;
+
+  #aboutMeTitle {
+    @include flex-center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  #aboutMeText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+
+    @media screen and (min-width: 768px) {
+      width: 45%;
+    }
+
+    @media screen and (min-width: 1440px) {
+      align-items: start;
+
+    }
+
+
+    article {
+      min-height: 400px;
+      padding: 1rem;
+      // overflow-y: scroll;
+
+      // @media screen and (min-width: 1220px) {
+      //   height: 800px;
+      //   overflow: auto;
+      // }
+
+
+
+      p {
+        width: 100%;
+        text-align: left;
+      }
+    }
+  }
+
+  #avatar {
+    @include flex-center;
+    width: 60%;
+
+    @media screen and (min-width: 768px) {
+      width: 45%;
+    }
+
+    @media screen and (min-width: 990px) {
+      width: 45%;
+    }
+
+    @media screen and (min-width: 1024px) {
+      width: 35%;
+    }
+
+    @media screen and (min-width: 1220px) {
+      width: 25%;
+    }
+
+    @media screen and (min-width: 1999px) {
+      width: 15%;
+    }
+    
+
+    figure {
+      @include flex-center;
+      width: 100%;
+
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 100%;
+      }
+    }
+  }
+}

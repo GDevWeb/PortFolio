@@ -6,7 +6,7 @@ import imgApprenticeJourney from "../../public/images/apprentice_journey.jpg";
 
 function Home() {
   return (
-    <div id="homeContainer">
+    <div id="mainContainer" className="homeContainer">
       <section className="intro-section">
         <h2>Bienvenue sur mon portFolio</h2>
         <p>

@@ -1,58 +1,70 @@
-import "../sass/aboutMe.scss";
 import { Link } from "react-router-dom";
+import "../sass/aboutMe.scss";
+import myAvatar from "../../public/images/avatar2.jpg";
+import indexIcons from "../assets/icons/indexIcons";
 
-function AboutMe() {
+function About() {
   return (
-    <div id="aboutMeContainer">
-      <div id="aboutMeTitle">
-        <h2>Faisons connaissance !</h2>
-      </div>
-
-      <div id="aboutMeText">
-        <article>
-          <h3>Bienvenue sur ma page personnelle !</h3>
+    <div id="mainContainer" className="aboutContainer">
+      <section className="intro-section">
+        <figure className="avatar-container">
+          <img src={myAvatar} alt="Ma photo" />
+        </figure>
+        <div className="intro-text">
+          <h2>Faisons connaissance !</h2>
           <p>
-            Salut, je suis Gaëtan Dammaretz, un développeur web basé en région
-            Lilloise. Mon parcours atypique m'a guidé du monde de la sécurité
-            incendie et de la banque à celui du développement.
+            Bienvenue sur ma page personnelle ! Salut, je suis Gaëtan Dammaretz,
+            un développeur web basé en région Lilloise. Mon parcours atypique
+            m'a guidé du monde de la sécurité incendie et de la banque à celui
+            du développement.
           </p>
           <p>
             Passionné par le code et la créativité, j'ai exploré divers
             horizons, de la conception web à l'implémentation avec des
             technologies telles que HTML, CSS, JavaScript, React, et Node.js.
           </p>
-          <p>
-            Bien que mon expérience professionnelle formelle dans le
-            développement web soit limitée, j'ai consacré du temps à explorer et
-            à développer mes compétences de manière autodidacte. Mon parcours
-            comprend une série de projets personnels et informels où j'ai pu
-            mettre en pratique mes connaissances en développement JavaScript et
-            React. Je suis passionné par l'apprentissage continu et par
-            l'opportunité de collaborer avec d'autres professionnels pour créer
-            des expériences web mémorables.
-          </p>
+        </div>
+      </section>
 
+      <section className="skills-section">
+        <div className="skill-box">
+          <img src={indexIcons.iconCode} alt="icône balise code" />
+          <h3>Compétences en développement</h3>
           <p>
-            En dehors du code, je suis un mélomane-guitariste, un adepte du
-            street workout et un passionné des dernières technologies. Mon
-            approche du développement web va au-delà de simplement écrire du
-            code ; elle vise à harmoniser le design et la fonctionnalité pour
-            créer des expériences utilisateur intéressantes.
+            Mon parcours comprend une série de projets personnels et informels
+            où j'ai pu mettre en pratique mes connaissances en développement
+            JavaScript et React.
           </p>
+        </div>
+        <div className="skill-box">
+          <img src={indexIcons.iconGuitar} alt="icône guitare" />
+          <h3>Passe-temps musicaux</h3>
+          <p>En dehors du code, je suis un mélomane-guitariste passionné.</p>
+        </div>
+        <div className="skill-box">
+          <img src={indexIcons.iconBookOpen} alt="icône livre ouvert" />
+          <h3>Autres intérêts</h3>
+          <p>
+            Je suis également un adepte du street workout et un passionné des
+            dernières technologies.
+          </p>
+        </div>
+      </section>
 
-          <p>
-            <Link to="/contact">Prêt à collaborer ? Contactez-moi</Link> et
-            découvrez comment nous pouvons créer ensemble des expériences web
-            mémorables. Je suis passionné par la création de solutions
-            innovantes et je suis impatient de discuter de votre prochain projet
-            avec vous !
-          </p>
-        </article>
-      </div>
+      <section className="contact-section">
+        <h2>Prêt à collaborer ?</h2>
+        <p>
+          Contactez-moi et découvrez comment nous pouvons créer ensemble des
+          expériences web mémorables. Je suis passionné par la création de
+          solutions innovantes et je suis impatient de discuter de votre
+          prochain projet avec vous !
+        </p>
+        <button className="cta-button">
+          <Link to="/contact">Me contacter</Link>
+        </button>
+      </section>
     </div>
   );
 }
 
-export default AboutMe;
-
-// hello
+export default About;

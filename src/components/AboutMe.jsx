@@ -12,11 +12,14 @@ function About() {
         </figure>
         <div className="intro-text">
           <h2>Faisons connaissance !</h2>
+          <p>Bienvenue sur ma page personnelle !</p>{" "}
           <p>
-            Bienvenue sur ma page personnelle ! Salut, je suis Gaëtan Dammaretz,
-            un développeur web basé en région Lilloise. Mon parcours atypique
-            m'a guidé du monde de la sécurité incendie et de la banque à celui
-            du développement.
+            Salut, je suis Gaëtan Dammaretz, un développeur web basé en région
+            Lilloise.
+          </p>
+          <p>
+            Mon parcours atypique m'a guidé du monde de la sécurité incendie et
+            de la banque à celui du développement.
           </p>
           <p>
             Passionné par le code et la créativité, j'ai exploré divers
@@ -55,9 +58,11 @@ function About() {
         <h2>Prêt à collaborer ?</h2>
         <p>
           Contactez-moi et découvrez comment nous pouvons créer ensemble des
-          expériences web mémorables. Je suis passionné par la création de
-          solutions innovantes et je suis impatient de discuter de votre
-          prochain projet avec vous !
+          expériences web mémorables.
+        </p>{" "}
+        <p>
+          Je suis passionné par la création de solutions innovantes et je suis
+          impatient de discuter de votre prochain projet avec vous !
         </p>
         <button className="cta-button">
           <Link to="/contact">Me contacter</Link>

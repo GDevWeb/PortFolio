@@ -1,5 +1,8 @@
 import iconBars from "./iconBars.svg";
 import iconBulma from "./icon_Bulma.svg";
+import iconBook from "./iconBook.svg";
+import iconBookOpen from "./iconBookOpen.svg";
+import iconCode from "./iconCode.svg";
 import iconComments from "./iconComments.svg";
 import iconCss3 from "./iconCss3.svg";
 import iconExpressJs from "./iconExpressJS.svg";
@@ -8,6 +11,7 @@ import iconFigma from "./iconFigma.svg";
 import iconGithub from "./iconGithub.svg";
 import iconGithubSquare from "./iconGithubSquare.svg";
 import iconGreenSock from "./icon_GreenSock.svg";
+import iconGuitar from "./iconGuitar.svg";
 import iconHalfStroke from "./iconHalfStroke.svg";
 import iconHtml5 from "./iconHtml5.svg";
 import iconJs from "./iconJs.svg";
@@ -35,6 +39,9 @@ import iconXMark from "./icon_XMark.svg";
 export default{
   iconBars,
   iconBulma,
+  iconBook,
+  iconBookOpen,
+  iconCode,
   iconComments,
   iconCss3,
   iconExpressJs,
@@ -43,6 +50,7 @@ export default{
   iconGithub,
   iconGithubSquare,
   iconGreenSock,
+  iconGuitar,
   iconHalfStroke,
   iconHtml5,
   iconJs,

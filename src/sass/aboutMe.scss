@@ -1,92 +1,111 @@
 @import "variables";
 @import "mixins";
 
-#aboutMeContainer {
+.aboutContainer {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 5vh auto;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  @include boxContainerGlassMorphism(100%, auto);
 
-  #aboutMeTitle {
-    @include flex-center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    width: 100%;
+  @media screen and (min-width: 769px) {
+    display: grid;
+    grid-template-columns: repeat(3, auto-fit);
+    grid-template-rows: repeat(3, auto-fit);
   }
 
-  #aboutMeText {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+  section:not(.skills-section) {
     padding: 1rem;
-
-    @media screen and (min-width: 768px) {
-      width: 45%;
-    }
-
-    @media screen and (min-width: 1440px) {
-      align-items: start;
-
-    }
-
-
-    article {
-      min-height: 400px;
-      padding: 1rem;
-      // overflow-y: scroll;
-
-      // @media screen and (min-width: 1220px) {
-      //   height: 800px;
-      //   overflow: auto;
-      // }
-
-
-
-      p {
-        width: 100%;
-        text-align: left;
-      }
-    }
+    @include boxContainerGlassMorphism(100%, auto);
+    @include fillUpAnimation();
   }
 
-  #avatar {
-    @include flex-center;
-    width: 60%;
+  .intro-section {
+    @include flex-center();
+    flex-wrap: wrap;
+    gap: 2rem;
 
-    @media screen and (min-width: 768px) {
-      width: 45%;
+    @media screen and (min-width: 769px) {
+      grid-column: span 3;
+      grid-row: span 1;
     }
 
-    @media screen and (min-width: 990px) {
-      width: 45%;
-    }
-
-    @media screen and (min-width: 1024px) {
-      width: 35%;
-    }
-
-    @media screen and (min-width: 1220px) {
-      width: 25%;
-    }
-
-    @media screen and (min-width: 1999px) {
-      width: 15%;
-    }
-    
-
-    figure {
-      @include flex-center;
-      width: 100%;
-
+    .avatar-container {
+      width: 20rem;
+      height: 20rem;
+      overflow: hidden;
+      border-radius: 50%;
+      border: 2px solid $primary-color;
 
       img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        object-position: center;
-        border-radius: 100%;
+        @include imgResponsive(100%, 100%, cover);
       }
+    }
+
+    .intro-text {
+      flex-grow: 1;
+
+      h2 {
+        margin-bottom: 1rem;
+      }
+
+      p {
+        line-height: 1.6;
+      }
+    }
+  }
+
+  .skills-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+
+    @media screen and (min-width: 769px) {
+      grid-column: span 3;
+      grid-row: span 2;
+    }
+
+    .skill-box {
+      @include flex-center();
+      justify-content: space-evenly;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+      @include boxContainerGlassMorphism(100%, auto);
+      @include fillUpAnimation();
+
+      @media screen and (min-width: 769px) {
+        flex-basis: 30%;
+      }
+
+      h3 {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    img:hover {
+      @include logo-hover-shadow($light-background-color);
+    }
+  }
+
+  .contact-section {
+    text-align: center;
+
+    @media screen and (min-width: 769px) {
+      grid-column: span 3;
+      grid-row: span 3;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .cta-button {
+      margin-top: 1rem;
     }
   }
 }

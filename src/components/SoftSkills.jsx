@@ -4,7 +4,7 @@ import icons from "../assets/icons/indexIcons";
 
 function SoftSkills() {
   return (
-    <div id="softSkillsContainer">
+    <div id="mainContainer" className="softSkillsContainer">
       <div id="softSkillsTitle">
         <h2>SoftSkills</h2>
       </div>

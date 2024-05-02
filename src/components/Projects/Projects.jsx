@@ -17,7 +17,7 @@ function Projects() {
   });
 
   return (
-    <div id="projectsContainer">
+    <div id="mainContainer" className="projectsContainer">
       <div id="projectTitle">
         <h2>Mes projets</h2>
       </div>

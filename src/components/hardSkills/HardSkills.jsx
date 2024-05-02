@@ -42,7 +42,7 @@ function HardSkills() {
     );
   });
   return (
-    <div id="hardSkillsContainer">
+    <div id="mainContainer" className="hardSkillsContainer">
       <div id="hardSkillsTitle">
         <h2>HardSkills</h2>
         <div id="filter">

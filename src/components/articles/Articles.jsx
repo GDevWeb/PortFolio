@@ -21,7 +21,7 @@ function Articles() {
     );
   });
   return (
-    <div id="articlesContainer">
+    <div id="mainContainer" className="articlesContainer">
       <div id="articleTitle">
         <h1>Articles</h1>
       </div>

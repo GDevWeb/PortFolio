@@ -3,7 +3,7 @@ import icons from "../assets/icons/indexIcons";
 
 function Contact() {
   return (
-    <div id="contactContainer">
+    <div id="mainContainer" className="contactContainer">
       <h2>Contactez-moi</h2>
       <div id="contactParagraph">
         <p>

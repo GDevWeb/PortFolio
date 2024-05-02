@@ -31,11 +31,16 @@
     }
 
     .avatar-container {
+      display: none;
       width: 20rem;
       height: 20rem;
       overflow: hidden;
       border-radius: 50%;
       border: 2px solid $primary-color;
+
+      @media screen and (min-width: 769px) {
+        display: block;
+      }
 
       img {
         @include imgResponsive(100%, 100%, cover);
@@ -84,7 +89,8 @@
     }
 
     img:hover {
-      @include logo-hover-shadow($light-background-color);
+      @include logo-hover-shadow($link-active);
+
     }
   }
 

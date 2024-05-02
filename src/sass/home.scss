@@ -10,7 +10,7 @@
   @media screen and (min-width: 769px) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 400px repeat(2, 1fr);
+    grid-template-rows: 400px repeat(2, auto);
   }
 
   // Sections principales

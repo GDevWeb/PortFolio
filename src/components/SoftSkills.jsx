@@ -12,42 +12,42 @@ function SoftSkills() {
       <div id="softSkillsList">
         <CardItem
           icon={icons.iconSliders}
-          title={"Adaptabilité"}
+          title={"Agilité professionnelle"}
           content={"Capacité à s'adapter à des environnements professionnels variés."}
         />
 
         <CardItem
-          title={"Détermination"}
+          title={"Persévérance inébranlable"}
           icon={icons.iconTrophy}
           content={"Persévérance dans la poursuite des objectifs malgré les défis."}
         />
 
         <CardItem
-          title={"Créativité"}
+          title={"Innovation inspirée"}
           icon={icons.iconPaintBrush}
           content={"Sensibilité créative dans le développement web."}
         />
 
         <CardItem
-          title={"Curiosité technologique"}
+          title={"Fascination technologique"}
           icon={icons.iconLapTop}
           content={"Intérêt constant pour les dernières avancées technologiques."}
         />
 
         <CardItem
-          title={"Esprit d'équipe"}
+          title={"Collaboration harmonieuse"}
           icon={icons.iconUsers}
           content={"Capacité à collaborer efficacement au sein d'une équipe."}
         />
 
         <CardItem
-          title={"Communication"}
+          title={"Clarté et impact"}
           icon={icons.iconComments}
           content={"Clarté et efficacité dans la communication professionnelle."}
         />
 
         <CardItem
-          title={"Résilience"}
+          title={"Force face à l'adversité"}
           icon={icons.iconShield}
           content={"Capacité à surmonter les défis et à rebondir après des situations difficiles. Faire preuve de persévérance et de résistance face aux obstacles professionnels, tout en maintenant une attitude positive et constructive."}
         />

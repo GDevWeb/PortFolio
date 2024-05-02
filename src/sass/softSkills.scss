@@ -12,6 +12,7 @@
         flex-wrap: wrap;
         gap: 1rem;
         width: 100%;
+        margin-bottom: 1rem;
     }
 
     #softSkillsList {
@@ -26,15 +27,9 @@
             justify-content: space-evenly;
             flex-wrap: wrap;
             gap: 1rem;
-            @include boxContainerGlassMorphism(80%, auto);
             padding: 0.5rem;
-
-            &:hover {
-                transform: scale(0.9);
-                background-color: $primary-hover-color;
-                background-color: $link-hover-light;
-                transition: all 0.2s ease-in-out;
-            }
+            @include boxContainerGlassMorphism(80%, auto);
+            @include fillUpAnimation();
 
             @media screen and (min-width: 768px) {
                 width: 33%;
@@ -65,12 +60,8 @@
                 width: 100%;
 
             }
-
-            .download {
-                @include boxContainerGlassMorphism(15rem, auto);
-                padding: 1rem;
-            }
         }
     }
 }
 
+// /*update

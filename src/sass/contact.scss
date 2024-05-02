@@ -1,13 +1,12 @@
 @import "variables";
 @import "mixins";
 
-#contactContainer {
+.contactContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     @include boxContainerGlassMorphism(100%, 50vh);
-    margin: 10vh auto;
 
     h2 {
         width: 100%;

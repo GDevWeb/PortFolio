@@ -1,11 +1,10 @@
 @import "variables";
 @import "mixins";
 
-#softSkillsContainer {
+.softSkillsContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 5vh auto 10vh;
 
 
     #softSkillsTitle {

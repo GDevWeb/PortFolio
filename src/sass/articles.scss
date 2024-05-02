@@ -1,7 +1,7 @@
 @import "variables";
 @import "mixins";
 
-#articlesContainer {
+.articlesContainer {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -9,7 +9,6 @@
     gap: 1rem;
     width: 100%;
     padding: 1rem;
-    margin: 5vh auto 10vh;
 
     .linkArticle {
         display: flex;

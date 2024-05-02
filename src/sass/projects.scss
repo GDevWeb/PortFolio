@@ -1,12 +1,11 @@
 @import "variables";
 @import "mixins";
 
-#projectsContainer {
+.projectsContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 1rem;
-  margin: 5vh auto 10vh;
 
   #projectTitle {
     @include flex-center;

@@ -34,7 +34,7 @@ function HardSkills() {
         key={hardSkills.title}
         title={hardSkills.title}
         icon={hardSkills.icon}
-        content={hardSkills.content}
+        // content={hardSkills.content}
         link={hardSkills.link}
         fileName={hardSkills.fileName}
         linkText={hardSkills.grade}
@@ -97,17 +97,32 @@ function HardSkills() {
           </div>
         </div>
       </div>
-      <article>
+      <section className="intro-section">
         <h3>Développeur frontend mais pas que ...</h3>
         <p>
-          En tant que développeur, je me passionne particulièrement pour le
-          front-end, où la fusion entre design et code donne vie à des
-          expériences web uniques. Mon expertise se concentre sur les
-          technologies front-end modernes, tandis que je reste ouvert et
-          enthousiaste à l'idée d'explorer de nouvelles compétences et
-          opportunités, y compris dans le domaine du back-end.
+          En tant que développeur, je suis passionné par la création
+          d'expériences web uniques et engageantes.
         </p>
-      </article>
+        <p>
+          {" "}
+          Mon savoir-faire se concentre principalement sur le développement
+          front-end, où je combine créativité et maîtrise technique pour donner
+          vie à des interfaces utilisateur innovantes.
+        </p>
+        <p>
+          {" "}
+          Je suis constamment à la recherche de nouvelles technologies et de
+          nouvelles méthodes pour améliorer mes compétences et relever de
+          nouveaux défis.
+        </p>
+        <p>
+          {" "}
+          Tout en mettant l'accent sur le front-end, je suis également ouvert à
+          explorer d'autres domaines du développement, ce qui me permet
+          d'élargir mes horizons et de continuer à évoluer en tant que
+          développeur web.{" "}
+        </p>
+      </section>
 
       <div id="hardSkillsList" ref={hardSkillsRef}>
         {hardSkillsSet}
@@ -117,5 +132,3 @@ function HardSkills() {
 }
 
 export default HardSkills;
-
-//Test commit merge 

@@ -2,66 +2,60 @@
 @import "mixins";
 
 .softSkillsContainer {
-    display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  #softSkillsTitle {
+    @include flex-center;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    gap: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
 
+  #softSkillsList {
+    @include flex-center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
 
-    #softSkillsTitle {
-        @include flex-center;
-        flex-wrap: wrap;
-        gap: 1rem;
+    .cardItem {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 0.5rem;
+      @include boxContainerGlassMorphism(80%, auto);
+      @include fillUpAnimation();
+
+      @media screen and (min-width: 768px) {
+        width: 33%;
+        min-height: 45rem;
+        height: auto;
+      }
+
+      @media screen and (min-width: 990px) {
+        width: 25%;
+      }
+
+      .cardItemTitle {
         width: 100%;
-        margin-bottom: 1rem;
-    }
+        padding: 1rem;
+      }
 
-    #softSkillsList {
-        @include flex-center;
-        flex-wrap: wrap;
-        gap: 1.5rem;
+      img {
+        width: 25%;
 
-
-        .cardItem {
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            gap: 1rem;
-            padding: 0.5rem;
-            @include boxContainerGlassMorphism(80%, auto);
-            @include fillUpAnimation();
-
-            @media screen and (min-width: 768px) {
-                width: 33%;
-                min-height: 45rem;
-                height: auto;
-            }
-
-            @media screen and (min-width: 990px) {
-                width: 25%;
-            }
-
-            .cardItemTitle {
-                width: 100%;
-                padding: 1rem;
-            }
-
-
-            img {
-                width: 25%;
-
-                &:hover {
-                    @include logo-hover-shadow($link-active);
-                }
-            }
-
-            .cardItemContent {
-                @include flex-center;
-                width: 100%;
-
-            }
+        &:hover {
+          @include logo-hover-shadow($link-active);
         }
-    }
-}
+      }
 
-// /*update
+      .cardItemContent {
+        @include flex-center;
+        width: 100%;
+      }
+    }
+  }
+}

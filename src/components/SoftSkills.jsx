@@ -13,13 +13,17 @@ function SoftSkills() {
         <CardItem
           icon={icons.iconSliders}
           title={"Agilité professionnelle"}
-          content={"Capacité à s'adapter à des environnements professionnels variés."}
+          content={
+            "Capacité à s'adapter à des environnements professionnels variés."
+          }
         />
 
         <CardItem
           title={"Persévérance inébranlable"}
           icon={icons.iconTrophy}
-          content={"Persévérance dans la poursuite des objectifs malgré les défis."}
+          content={
+            "Persévérance dans la poursuite des objectifs malgré les défis."
+          }
         />
 
         <CardItem
@@ -31,7 +35,9 @@ function SoftSkills() {
         <CardItem
           title={"Fascination technologique"}
           icon={icons.iconLapTop}
-          content={"Intérêt constant pour les dernières avancées technologiques."}
+          content={
+            "Intérêt constant pour les dernières avancées technologiques."
+          }
         />
 
         <CardItem
@@ -43,13 +49,17 @@ function SoftSkills() {
         <CardItem
           title={"Clarté et impact"}
           icon={icons.iconComments}
-          content={"Clarté et efficacité dans la communication professionnelle."}
+          content={
+            "Clarté et efficacité dans la communication professionnelle."
+          }
         />
 
         <CardItem
           title={"Force face à l'adversité"}
           icon={icons.iconShield}
-          content={"Capacité à surmonter les défis et à rebondir après des situations difficiles. Faire preuve de persévérance et de résistance face aux obstacles professionnels, tout en maintenant une attitude positive et constructive."}
+          content={
+            "Capacité à surmonter les défis et à rebondir après des situations difficiles. Faire preuve de persévérance et de résistance face aux obstacles professionnels, tout en maintenant une attitude positive et constructive."
+          }
         />
       </div>
     </div>

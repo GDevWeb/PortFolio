@@ -31,12 +31,17 @@
     @include flex-center();
     flex-wrap: wrap;
     gap: 1rem;
-    padding: 1rem;
+    padding: 3.5rem;
     @include boxContainerGlassMorphism(100%, 100%);
     @include fillUpAnimation();
 
+    @media screen and (min-width: 769px) {
+      padding: 1rem;
+    }
 
   }
+
+
 
   .professionalExperienceTitle {
     @media screen and (min-width: 769px) {
@@ -61,8 +66,9 @@
   }
 
   section.futur {
+
     @media screen and (min-width: 769px) {
-      grid-column: 2;  
+      grid-column: 2;
       grid-row: span 1;
     }
   }

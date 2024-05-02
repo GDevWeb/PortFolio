@@ -1,60 +1,90 @@
 @import "variables";
 @import "mixins";
 
-#professionalExperienceContainer {
-    display: flex;
+.professionalExperienceContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  @include boxContainerGlassMorphism(100%, auto);
+
+  @media screen and (min-width: 769px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px repeat(3, auto-fit);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .professionalExperienceTitle {
+    @include flex-center();
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 5vh auto 10vh;
+    gap: 1rem;
 
-    #professionalExperienceTitle {
-        @include flex-center;
-        flex-wrap: wrap;
-        gap: 1rem;
-        width: 100%;
+  }
+
+  .transition,
+  .handicap,
+  .futur,
+  .resume {
+    @include flex-center();
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    @include boxContainerGlassMorphism(100%, 100%);
+    @include fillUpAnimation();
+
+
+  }
+
+  .professionalExperienceTitle {
+    @media screen and (min-width: 769px) {
+      grid-column: span 3;
+      grid-row: span 2;
     }
-
-    #experienceList {
-        @include flex-center;
-        flex-wrap: wrap;
-        gap: 1rem;
+  }
 
 
-        .cardItem {
-            @include flex-center;
-            @include boxContainerGlassMorphism(80%, auto);
-            flex-wrap: wrap;
-            padding: 0.5rem;
-
-            &:hover {
-                transform: scale(0.9);
-                background-color: $primary-hover-color;
-                background-color: $link-hover-light;
-                transition: all 0.2s ease-in-out;
-            }
-
-            @media screen and (min-width: 768px) {
-
-                width: 45%;
-                min-height: 450px;
-
-            }
-
-            .cardItemTitle {
-                width: 100%;
-                padding: 1rem;
-            }
-
-            .cardItemContent {
-                @include flex-center;
-                width: 100%;
-
-            }
-
-            .download {
-                @include boxContainerGlassMorphism(15rem, auto);
-                padding: 1rem;
-            }
-        }
+  section.transition {
+    @media screen and (min-width: 769px) {
+      grid-column: span 1;
+      grid-row: span 1;
     }
+  }
+
+  section.handicap {
+    @media screen and (min-width: 769px) {
+      grid-column: 3;
+      grid-row: span 1;
+    }
+  }
+
+  section.futur {
+    @media screen and (min-width: 769px) {
+      grid-column: 2;  
+      grid-row: span 1;
+    }
+  }
+
+  section.resume {
+    @media screen and (min-width: 769px) {
+      grid-column: span 3;
+      grid-row: span 1;
+    }
+  }
+
+  h3 {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    width: 100%;
+    line-height: 1.6;
+  }
+
+  .cta-button {
+    margin-top: 1rem;
+  }
 }

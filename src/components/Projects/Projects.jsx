@@ -37,9 +37,3 @@ function Projects() {
 
 export default Projects;
 
-
-/* 
-inclure un filtre lorsqu'il y a plus de projet
-faire un hook de ce filtre
-hello
-*/

@@ -61,14 +61,15 @@
         justify-content: space-evenly;
         @include boxContainerGlassMorphism(100%, auto);
         padding: 1rem;
-        @include fillUpAnimation();
-
-
 
         h3 {
             width: 100%;
             text-align: center;
         }
+    }
+
+    section:not(#section-projectLink) {
+        @include fillUpAnimation();
     }
 
     #section-description {

@@ -44,6 +44,11 @@ Le portfolio est accessible en ligne à l'adresse suivante : [Portfolio GDevWeb]
 - **Version 1.0.1 (28 avril 2024) :** Refonte de la page home - Bento format
 - **Version 1.0.2 (01 mai 2024) :** Refonte de la page aboutMe - Bento format
 - **Version 1.0.3 (02 mai 2024) :** Refonte de la page parcours - Bento format
+- **Version 1.0.4 (03 mai 2024) :** Refonte des pages skills - taille des cards
+- **Version 1.0.5 (03 mai 2024) :** Refonte des page projects - taille des cards et style
+- **Version 1.0.6 (03 mai 2024) :** Refonte des page projet - bento format et responsive - ajout d'un bouton de navigation retour à la liste
+- **Version 1.0.7 (03 mai 2024) :** Refonte des page articles - taille des cards et style
+- **Version 1.0.8 (03 mai 2024) :** Refonte des page article - bento format et responsive - ajout d'un bouton de navigation retour à la liste
 
 ---
 

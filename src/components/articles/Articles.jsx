@@ -9,15 +9,15 @@ function Articles() {
     const splittedTags = tags.join(", ");
 
     return (
-      <ArticleItem
-        key={article.id}
-        id={article.id}
-        picture={picture ? article.picture : illustrationDefault}
-        title={title}
-        author={author}
-        date={date}
-        tags={splittedTags}
-      />
+        <ArticleItem
+          key={article.id}
+          id={article.id}
+          picture={picture ? article.picture : illustrationDefault}
+          title={title}
+          author={author}
+          date={date}
+          tags={splittedTags}
+        />
     );
   });
   return (

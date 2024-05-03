@@ -22,19 +22,20 @@
     }
 
     .articleItem {
-        @include boxContainerGlassMorphism(80%, auto);
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        width: 80%;
-        min-height: 50rem;
+        gap: 1rem;
+        @include boxContainerGlassMorphism(100%, auto);
+        min-height: 30rem;
+        padding: 1rem;
+        @include fillUpAnimation();
         cursor: pointer;
 
         figure {
             @include flex-center;
             width: 100%;
-            height: auto;
 
             img {
                 @include imgResponsive(80%);
@@ -80,9 +81,7 @@
 
         &:hover {
             transform: scale(0.9);
-            background-color: $primary-hover-color;
-            background-color: $link-hover-light;
-            transition: all 0.2s ease-in-out;
+            transition: scale 0.2s ease-in-out;
         }
 
     }

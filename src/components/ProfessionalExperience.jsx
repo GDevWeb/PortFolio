@@ -19,7 +19,7 @@ function ProfessionalExperience() {
       </section>
 
       <section className="handicap">
-        <h3>RQTH - Reconnaissance de la Qualité de Travailleur Handicapé</h3>
+        <h3>RQTH</h3>
         <p>
           Suite à un sérieux accident de travail à mon dernier poste, j'ai
           obtenu la Reconnaissance de la Qualité de Travailleur Handicapé

@@ -6,8 +6,9 @@
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  width: 100%;
+  height: auto;
   padding: 2rem;
-  @include boxContainerGlassMorphism(100%, auto);
 
   @media screen and (min-width: 769px) {
     display: grid;

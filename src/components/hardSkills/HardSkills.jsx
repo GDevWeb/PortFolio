@@ -100,27 +100,10 @@ function HardSkills() {
       <section className="intro-section">
         <h3>Développeur frontend mais pas que ...</h3>
         <p>
-          En tant que développeur, je suis passionné par la création
-          d'expériences web uniques et engageantes.
-        </p>
-        <p>
-          {" "}
-          Mon savoir-faire se concentre principalement sur le développement
-          front-end, où je combine créativité et maîtrise technique pour donner
-          vie à des interfaces utilisateur innovantes.
-        </p>
-        <p>
-          {" "}
-          Je suis constamment à la recherche de nouvelles technologies et de
-          nouvelles méthodes pour améliorer mes compétences et relever de
-          nouveaux défis.
-        </p>
-        <p>
-          {" "}
           Tout en mettant l'accent sur le front-end, je suis également ouvert à
           explorer d'autres domaines du développement, ce qui me permet
           d'élargir mes horizons et de continuer à évoluer en tant que
-          développeur web.{" "}
+          développeur web.
         </p>
       </section>
 

@@ -22,7 +22,7 @@ function Projects() {
       <div id="projectTitle">
         <h2>Mes projets</h2>
       </div>
-      <section className="section-introduction">
+      <section id="section-introduction">
         <h3>Retrouver ma liste d'une sélection de projets</h3>
         <p className="projectIntroduction">
           Découvrez ci-dessous quelques-uns des projets sur lesquels j'ai
@@ -37,4 +37,8 @@ function Projects() {
 
 export default Projects;
 
-// rework style
+
+/* 
+inclure un filtre lorsqu'il y a plus de projet
+faire un hook de ce filtre
+*/

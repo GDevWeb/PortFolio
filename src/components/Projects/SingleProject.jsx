@@ -1,6 +1,9 @@
 import { useParams } from "react-router";
 import projectsArray from "./projectsArray";
 import illustrationDefault from "/images/illustrationDefault.jpg";
+import { Link } from "react-router-dom";
+// import "./SingleProject.css";
+import "../../sass/SingleProject.scss";
 
 function SingleProject() {
   const { id } = useParams();
@@ -13,27 +16,58 @@ function SingleProject() {
   const splittedCategory = category.join(", ");
 
   return (
-    <div id="singleArticleContainer">
-      <div id="articleTitle">
-        <h2>{title}</h2>
+    <>
+      <div id="mainContainer" className="singleProjectContainer">
+        <div id="projectHeader">
+          <h2>{title}</h2>
+        </div>
+        <figure id="projectIllustration">
+          <img
+            src={picture ? picture : illustrationDefault}
+            alt={`image du projet ${title}`}
+          />
+        </figure>
+        <section id="section-projectDetails">
+          <h3>Détails du projet</h3>
+          <ul>
+            <li>
+              <strong>Demande :</strong> [Description de la demande du client]
+            </li>
+            <li>
+              <strong>Solution proposée :</strong> [Description de la solution
+              proposée]
+            </li>
+            <li>
+              <strong>Difficultés rencontrées :</strong> [Description des
+              difficultés éventuelles]
+            </li>
+            <li>
+              <strong>Améliorations envisageables :</strong> [Idées
+              d'améliorations pour le projet]
+            </li>
+          </ul>
+        </section>
+        <section id="section-description">
+          <h3>Résumé</h3>
+          <p>{description}</p>
+        </section>
+        <section id="section-projectCategory">
+          <p>
+            Tags : <span className="projectTags">{splittedCategory}</span>
+          </p>
+        </section>
+        <section id="section-projectLink">
+          <button className="cta-button">
+            <a href={link}>Voir le projet</a>
+          </button>
+        </section>
       </div>
-      <figure>
-        <img src={picture ? picture : illustrationDefault} alt={`illustration du projet ${title}`} />
-      </figure>
-      <div id="articleContent">
-        <h3>Résumé</h3>
-        <p>{description}</p>
+      <div id="navigation">
+        <button className="cta-button">
+          <Link to={"/projects"}>⬅️Retour à la liste des projets</Link>
+        </button>
       </div>
-      <div id="articleDetail">
-        <p>
-        <p>
-          <a href={link}>Voir le projet </a>
-        </p>
-          <span className="articleLabel">Tags : </span>
-          {splittedCategory}
-        </p>
-      </div>
-    </div>
+    </>
   );
 }
 

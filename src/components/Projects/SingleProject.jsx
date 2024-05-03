@@ -2,7 +2,7 @@ import { useParams } from "react-router";
 import projectsArray from "./projectsArray";
 import illustrationDefault from "/images/illustrationDefault.jpg";
 import { Link } from "react-router-dom";
-import "../../sass/SingleProject.scss";
+import "../../sass/singleProject.scss";
 
 function SingleProject() {
   const { id } = useParams();

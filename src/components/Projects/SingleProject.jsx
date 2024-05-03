@@ -2,7 +2,6 @@ import { useParams } from "react-router";
 import projectsArray from "./projectsArray";
 import illustrationDefault from "/images/illustrationDefault.jpg";
 import { Link } from "react-router-dom";
-// import "./SingleProject.css";
 import "../../sass/SingleProject.scss";
 
 function SingleProject() {

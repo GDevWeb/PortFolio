@@ -27,6 +27,12 @@ const projectsArray = [
         </p>
       </>
     ),
+    request: "Le client a besoin de faire connaître son activité.",
+    solution:
+      "Je lui ai proposé une landing page en vanilla. Le client ayant des connaissances en HTML il peut gérer lui même le contenu de cette page.",
+    difficulties:
+      "Problème d'optimisation et de référencement dû à la technologie Javascript vanilla et le temps court accordé pour la conception du projet.",
+    upgrades: "Utiliser un framework Javascript pour l'optimisation.",
     resume: "Site vitrine pour un client passionné de guitare.",
     link: "https://gdevweb.github.io/PassionGuitar/",
     category: [
@@ -65,6 +71,13 @@ const projectsArray = [
         </p>
       </>
     ),
+    request:
+      "Une application développée à la demande de l'institutrice de ma fille actuellement en moyenne section.",
+    solution:
+      "Je lui ai proposé un jeux de memory sur le thème des fruits simple à utiliser.",
+    difficulties: "Pas de difficultés particulières.",
+    upgrades:
+      "Proposer différentes thèmes de cartes ainsi que différents modes de jeux",
     resume: "Application de gestion de tâches développée avec React.",
     link: "https://gdevweb.github.io/Game-Memory-Card/",
     category: ["frontend", "jeux", "html", "css", "javascript", "responsive"],
@@ -95,6 +108,13 @@ const projectsArray = [
         </p>
       </>
     ),
+    request:
+      "Pour mon besoin personnel afin d'organiser mes tâches de la journée",
+    solution: "Utilisation de React avec un localStorage.",
+    difficulties: "Pas de difficultés particulières.",
+    upgrades:
+      "Améliorer l'interface, ajouter des fonctionnalités supplémentaires et ajouter un backend.",
+
     resume: "Application de gestion de tâches développée avec React.",
     link: "https://daddy-do-list.vercel.app/",
     category: [
@@ -124,6 +144,12 @@ const projectsArray = [
         </p>
       </>
     ),
+    request:
+      "Besoin personnel, me faire connaître auprès de la communauté des développeurs web",
+    solution: "Création de mon portfolio avec React, react-router, sass.",
+    difficulties: "Pas de difficultés particulières",
+    upgrades:
+      "Mise à jour fréquente au fur et à mesure de ma maîtrise du REACT.",
     resume: "Mon portfolio personnel développé en frontend.",
     link: "https://gdevweb.vercel.app/",
     category: [

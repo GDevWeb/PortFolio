@@ -11,7 +11,17 @@ function SingleProject() {
     (project) => project.id === parseInt(id, 10)
   );
 
-  const { title, picture, description, link, category } = project;
+  const {
+    title,
+    picture,
+    description,
+    request,
+    solution,
+    difficulties,
+    upgrades,
+    link,
+    category,
+  } = project;
   const splittedCategory = category.join(", ");
 
   return (
@@ -26,23 +36,25 @@ function SingleProject() {
             alt={`image du projet ${title}`}
           />
         </figure>
+
         <section id="section-projectDetails">
           <h3>Détails du projet</h3>
           <ul>
             <li>
-              <strong>Demande :</strong> [Description de la demande du client]
+              <span>Demande :</span>{" "}
+              {request ? request : "Informations à venir"}
             </li>
             <li>
-              <strong>Solution proposée :</strong> [Description de la solution
-              proposée]
+              <span>Solution proposée :</span>{" "}
+              {solution ? solution : "Informations à venir"}
             </li>
             <li>
-              <strong>Difficultés rencontrées :</strong> [Description des
-              difficultés éventuelles]
+              <span>Difficultés rencontrées :</span>{" "}
+              {difficulties ? difficulties : "Informations à venir"}
             </li>
             <li>
-              <strong>Améliorations envisageables :</strong> [Idées
-              d'améliorations pour le projet]
+              <span>Améliorations envisageables :</span>{" "}
+              {upgrades ? upgrades : "Informations à venir"}
             </li>
           </ul>
         </section>

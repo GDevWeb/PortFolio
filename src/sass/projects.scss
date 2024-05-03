@@ -14,7 +14,7 @@
     width: 100%;
   }
 
-  article {
+  section.section-introduction {
     @include boxContainerGlassMorphism(80%, auto);
     padding: 1rem;
 

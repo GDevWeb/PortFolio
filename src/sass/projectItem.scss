@@ -1,22 +1,39 @@
 @import "variables";
 @import "mixins";
 
-.projectItem{
+.projectItem {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    @include boxContainerGlassMorphism(80%, auto);
+    @include boxContainerGlassMorphism(100%, auto);
     padding: 1rem;
+    @include fillUpAnimation();
 
+    &:hover {
+        transform: scale(0.9);
+        transition: scale 0.2s ease-in-out;
+    }
 
-    figure.projectPicture{
-        width: 80%;
+    @media screen and (min-width: 769px) {
+        width: 45%;
+        min-height: 40rem;
+    }
+
+    h3.projectItemTitle {
+        margin-bottom: 1rem;
+    }
+
+    figure.projectPicture {
+        width: 45%;
         height: auto;
-        margin: auto;
+        margin: 1rem auto;
 
-        img{
-            border-radius: 1rem;
+        img {
+            @include imgResponsive(100%, auto);
         }
     }
 
+    p.projectResume {
+        color: antiquewhite;
+    }
 }

@@ -1,7 +1,8 @@
-import "../../sass/hardSkills.scss";
+import { useState, useRef, useLayoutEffect } from "react";
 import hardSkillsArray from "./hardSkillsArray";
 import CardItem from "../CardItem";
-import { useState, useRef, useLayoutEffect } from "react";
+import ErrorMessage from "../Errors/ErrorMessage";
+import "../../sass/hardSkills.scss";
 
 function HardSkills() {
   const [selectedCategory, setSelectedCategory] = useState("both");
@@ -28,16 +29,17 @@ function HardSkills() {
     });
   }, [filterSkills]);
 
-  const hardSkillsSet = filterSkills.map((hardSkills) => {
+  const hardSkillsList = filterSkills.map((hardSkills) => {
+    const { id, title, icon, content, link, fileName, grade } = hardSkills;
     return (
       <CardItem
-        key={hardSkills.title}
-        title={hardSkills.title}
-        icon={hardSkills.icon}
-        // content={hardSkills.content}
-        link={hardSkills.link}
-        fileName={hardSkills.fileName}
-        linkText={hardSkills.grade}
+        key={id}
+        title={title}
+        icon={icon}
+        // content={content}
+        link={link}
+        fileName={fileName}
+        linkText={grade}
       />
     );
   });
@@ -108,7 +110,13 @@ function HardSkills() {
       </section>
 
       <div id="hardSkillsList" ref={hardSkillsRef}>
-        {hardSkillsSet}
+        {hardSkillsList.length > 0 ? (
+          hardSkillsList
+        ) : (
+          <ErrorMessage
+            contentErrorMessage={"Oups, La liste des compétences est vide !"}
+          />
+        )}
       </div>
     </div>
   );

@@ -1,7 +1,9 @@
+import { nanoid } from "nanoid";
 import Icons from "../../assets/icons/indexIcons";
 
 const hardSkillsArray = [
   {
+    id: nanoid(8),
     title: "HTML",
     icon: Icons.iconHtml5,
     content: "Maîtrise des balises et de la structure des pages web.",
@@ -11,6 +13,7 @@ const hardSkillsArray = [
     category: "frontend",
   },
   {
+    id: nanoid(8),
     title: "CSS",
     icon: Icons.iconCss3,
     content: "Styles, mises en page, animations et responsivité.",
@@ -20,6 +23,7 @@ const hardSkillsArray = [
     category: "frontend",
   },
   {
+    id: nanoid(8),
     title: "SASS",
     icon: Icons.iconSass,
     content: "Utilisation de Sass pour un CSS plus maintenable et évolutif.",
@@ -29,6 +33,7 @@ const hardSkillsArray = [
     category: "frontend",
   },
   {
+    id: nanoid(8),
     title: "Tailwind",
     icon: Icons.iconTailwind,
     content:
@@ -39,6 +44,7 @@ const hardSkillsArray = [
     category: "frontend",
   },
   {
+    id: nanoid(8),
     title: "Javascript",
     icon: Icons.iconJs,
     content: "Manipulation du DOM, programmation orientée objet...",
@@ -48,6 +54,7 @@ const hardSkillsArray = [
     category: "frontend",
   },
   {
+    id: nanoid(8),
     title: "GreenSock",
     icon: Icons.iconGreenSock,
     content: "Pour des animations stylées",
@@ -57,6 +64,7 @@ const hardSkillsArray = [
     category: "frontend",
   },
   {
+    id: nanoid(8),
     title: "TypeScript",
     icon: Icons.iconTypeScript,
     content:
@@ -67,6 +75,7 @@ const hardSkillsArray = [
     category: "tooling",
   },
   {
+    id: nanoid(8),
     title: "React",
     icon: Icons.iconReact,
     content: "Développement d'interfaces utilisateur dynamiques et réactives.",
@@ -76,6 +85,7 @@ const hardSkillsArray = [
     category: "frontend",
   },
   {
+    id: nanoid(8),
     title: "NodeJS",
     icon: Icons.iconNode,
     content: "Création de serveurs côté backend avec Node.js.",
@@ -85,6 +95,7 @@ const hardSkillsArray = [
     category: "backend",
   },
   {
+    id: nanoid(8),
     title: "MongoDB",
     icon: Icons.iconMongoDB,
     content: "Bases de données NoSQL avec MongoDB.",
@@ -94,6 +105,7 @@ const hardSkillsArray = [
     category: "backend",
   },
   {
+    id: nanoid(8),
     title: "ExpressJS",
     icon: Icons.iconExpressJs,
     content: "Construction d'applications web avec le framework Express.js.",
@@ -103,6 +115,7 @@ const hardSkillsArray = [
     category: "backend",
   },
   {
+    id: nanoid(8),
     title: "PHP",
     icon: Icons.iconPHP,
     content:
@@ -113,6 +126,7 @@ const hardSkillsArray = [
     category: "backend",
   },
   {
+    id: nanoid(8),
     title: "SQL",
     icon: Icons.iconSQL,
     content:
@@ -123,6 +137,7 @@ const hardSkillsArray = [
     category: "backend",
   },
   {
+    id: nanoid(8),
     title: "Github",
     icon: Icons.iconGithub,
     content:
@@ -133,6 +148,7 @@ const hardSkillsArray = [
     category: "tooling",
   },
   {
+    id: nanoid(8),
     title: "Figma",
     icon: Icons.iconFigma,
     content:

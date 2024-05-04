@@ -39,6 +39,11 @@ article>p {
 }
 
 
+.errorMessage{
+    @include error-message;
+}
+
+
 img,
 video,
 svg {

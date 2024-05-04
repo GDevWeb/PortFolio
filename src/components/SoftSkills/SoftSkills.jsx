@@ -1,13 +1,27 @@
+import "./softSkillsArray";
+import softSkillsArray from "./softSkillsArray";
+import CardItem from "../CardItem";
+import ErrorMessage from "../Errors/ErrorMessage";
 import "../../sass/softSkills.scss";
-import "./softSkillsArray.jsx";
-import softSkillsArray from "./softSkillsArray.jsx";
-import CardItem from "../CardItem.jsx";
 
 function SoftSkills() {
   // 1.State :
 
   // 2.Behavior :
-
+  const softSkillsList = softSkillsArray.map((softSkill) => {
+    const { id, title, icon, content, link, fileName, grade } = softSkill;
+    return (
+      <CardItem
+        key={id}
+        title={title}
+        icon={icon}
+        // content={content}
+        link={link}
+        fileName={fileName}
+        linkText={grade}
+      />
+    );
+  });
   // 3.Render :
   return (
     <div id="mainContainer" className="softSkillsContainer">
@@ -16,13 +30,13 @@ function SoftSkills() {
       </div>
 
       <div id="softSkillsList">
-        {softSkillsArray.map((softSkill) => {
-          const { id, title, icon, content } = softSkill;
-
-          return (
-            <CardItem key={id} title={title} icon={icon} content={content} />
-          );
-        })}
+        {softSkillsList.length > 0 ? (
+          softSkillsList
+        ) : (
+          <ErrorMessage
+            contentErrorMessage={"Oups, La liste des compétences est vide !"}
+          />
+        )}
       </div>
     </div>
   );

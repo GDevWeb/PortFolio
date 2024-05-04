@@ -1,11 +1,21 @@
 @import "variables";
 
+/* Font style */
+@mixin error-message{
+    color: $color-errorMessage;
+    font-style: italic;
+    font-weight: bolder;
+  }
+  
+
+/* Disposition */
 @mixin flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* Apparence des containers */
 @mixin boxContainerStyle {
   background-color: $card-background;
   border-radius: 1rem;
@@ -20,7 +30,7 @@
   border-radius: 1rem;
 }
 
-// img
+/* Images responsives */
 @mixin imgResponsive($width : 100%, $height: auto, $border-radius: 1rem) {
   width: $width;
   height: $height;

@@ -37,74 +37,76 @@ function BottomBar() {
 
   // 3.Render:
   return (
-    <nav id="BottomBar">
-      <ul className={toggleBottomBar ? "active" : "hide"}>
-        <NavLink
-          to="/"
-          onClick={handleBottomBar}
-          className={"navLink"}
-          activeClassName="activeLink"
-        >
-          Accueil
-        </NavLink>
-        <NavLink
-          to="/about"
-          onClick={handleBottomBar}
-          className={"navLink"}
-          activeClassName="activeLink"
-        >
-          À propos
-        </NavLink>
-        <NavLink
-          to="/parcours"
-          onClick={handleBottomBar}
-          className={"navLink"}
-          activeClassName="activeLink"
-        >
-          Mon parcours
-        </NavLink>
-        <NavLink
-          to="/softSkills"
-          onClick={handleBottomBar}
-          className={"navLink"}
-          activeClassName="activeLink"
-        >
-          SoftSkills
-        </NavLink>
-        <NavLink
-          to="/hardSkills"
-          onClick={handleBottomBar}
-          className={"navLink"}
-          activeClassName="activeLink"
-        >
-          HardSkills
-        </NavLink>
-        <NavLink
-          to="/projects"
-          onClick={handleBottomBar}
-          className={"navLink"}
-          activeClassName="activeLink"
-        >
-          Projets
-        </NavLink>
-        <NavLink
-          to="/articles"
-          onClick={handleBottomBar}
-          className={"navLink"}
-          activeClassName="activeLink"
-        >
-          Articles
-        </NavLink>
-        <NavLink
-          to="/contact"
-          onClick={handleBottomBar}
-          className={"navLink"}
-          activeClassName="activeLink"
-        >
-          {" "}
-          Contact
-        </NavLink>
-      </ul>
+    <div id="BottomBar">
+      <nav id="navBarBottom">
+        <ul className={toggleBottomBar ? "active" : "hide"}>
+          <NavLink
+            to="/"
+            onClick={handleBottomBar}
+            className={"navLink"}
+            activeClassName="activeLink"
+          >
+            Accueil
+          </NavLink>
+          <NavLink
+            to="/about"
+            onClick={handleBottomBar}
+            className={"navLink"}
+            activeClassName="activeLink"
+          >
+            À propos
+          </NavLink>
+          <NavLink
+            to="/parcours"
+            onClick={handleBottomBar}
+            className={"navLink"}
+            activeClassName="activeLink"
+          >
+            Mon parcours
+          </NavLink>
+          <NavLink
+            to="/softSkills"
+            onClick={handleBottomBar}
+            className={"navLink"}
+            activeClassName="activeLink"
+          >
+            SoftSkills
+          </NavLink>
+          <NavLink
+            to="/hardSkills"
+            onClick={handleBottomBar}
+            className={"navLink"}
+            activeClassName="activeLink"
+          >
+            HardSkills
+          </NavLink>
+          <NavLink
+            to="/projects"
+            onClick={handleBottomBar}
+            className={"navLink"}
+            activeClassName="activeLink"
+          >
+            Projets
+          </NavLink>
+          <NavLink
+            to="/articles"
+            onClick={handleBottomBar}
+            className={"navLink"}
+            activeClassName="activeLink"
+          >
+            Articles
+          </NavLink>
+          <NavLink
+            to="/contact"
+            onClick={handleBottomBar}
+            className={"navLink"}
+            activeClassName="activeLink"
+          >
+            {" "}
+            Contact
+          </NavLink>
+        </ul>
+      </nav>
       <div id="secondMainContainer">
         <div id="socialLinks">
           <h4>
@@ -142,13 +144,8 @@ function BottomBar() {
           <p>©️{currentYear} Dammaretz Gaëtan - Tous droits réservés</p>
         </div>
       </div>
-    </nav>
+    </div>
   );
 }
 
 export default BottomBar;
-
-/* 
-MEttre en place un eventListener sur windows lors du clic dans window => fermeture de la barre de navigation
-
-*/

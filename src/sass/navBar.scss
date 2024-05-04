@@ -2,23 +2,35 @@
 @import "mixins";
 
 nav#navBar {
-  display: none;
-  width: 100%;
+    display: none;
+    width: 100%;
 
-  @media screen and (min-width: 769px) {
-    display: block;
-  }
-
-  ul {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 1rem 2rem 0;
-    margin-bottom: 1rem;
-
-    .navLink {
-      margin-left: 1.5rem;
-      line-height: 1.6;
+    @media screen and (min-width: 769px) {
+        display: block;
     }
-  }
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 1rem 2rem 0;
+        margin-bottom: 1rem;
+
+        .navLink {
+            text-decoration: none;
+            color: $light-text-color;
+            margin-left: 1.5rem;
+            line-height: 1.6;
+            
+            &:hover {
+                color: $link-hover-light;
+                transition: color 0.9s ease-in-out;
+            }
+
+            &.activeLink,
+            &.active {
+                color: $link-active;
+            }
+        }
+    }
 }

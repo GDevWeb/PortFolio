@@ -13,6 +13,13 @@
     justify-content: space-evenly;
     @include boxContainerGlassMorphism(100%, auto);
 
+    #navBarBottom {
+
+        @media screen and (min-width: 769px) {
+            display: none;
+        }
+    }
+
     #secondMainContainer {
         display: flex;
         flex-wrap: wrap;
@@ -57,6 +64,10 @@
             .navIcon {
                 width: 24px;
                 height: auto;
+            }
+
+            @media screen and (min-width: 769px) {
+                display: none;
             }
         }
     }

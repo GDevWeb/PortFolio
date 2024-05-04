@@ -15,7 +15,7 @@ import PageContact from "../pages/PageContact";
 export default function Root() {
   return (
     <>
-      <Header />
+      <Header/>
       <main>
         <Routes>
           <Route path="/" element={<PageHome />} />

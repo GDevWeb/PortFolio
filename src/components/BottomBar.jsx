@@ -107,7 +107,7 @@ function BottomBar() {
       </ul>
       <div id="secondMainContainer">
         <div id="socialLinks">
-          <h5>
+          <h4>
             <a href="https://github.com/GDevWeb">
               <img
                 src={indexIcons.iconGithub}
@@ -116,8 +116,8 @@ function BottomBar() {
               />
               Github
             </a>
-          </h5>
-          <h5>
+          </h4>
+          <h4>
             <a href="https://www.linkedin.com/in/ga%C3%ABtan-dammaretz/">
               <img
                 src={indexIcons.iconLinkedin}
@@ -126,7 +126,7 @@ function BottomBar() {
               />
               Linkedin
             </a>
-          </h5>
+          </h4>
 
           <div className="container-navIcon">
             <img

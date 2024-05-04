@@ -1,13 +1,13 @@
 @import "variables";
 @import "mixins";
 
-
 header {
   @include flex-center;
+  position: fixed;
+  z-index: 1;
   flex-wrap: wrap;
-  width: 100%;
-  height: 15vh;
-  padding: 1rem;
+  gap: 1rem;
+  padding: 1rem 0 0;
   @include boxContainerGlassMorphism(100%, auto);
 
   h1 {

@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import "../sass/home.scss";
-import myAvatar from "../../public/images/avatar2.jpg";
-import indexImageProjects from "../../public/images/projects/indexImageProjects";
-import imgApprenticeJourney from "../../public/images/apprentice_journey.jpg";
+import myAvatar from "/public/images/avatar2.webp";
+import indexImageProjects from "/public/images/projects/indexImageProjects";
+import imgApprenticeJourney from "/public/images/apprentice_journey.webp";
 
 function Home() {
   return (

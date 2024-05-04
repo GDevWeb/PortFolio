@@ -1,7 +1,7 @@
-import imageDaddyDoList from "./imageDaddyDoList.png";
-import imageMemoryKidz from "./imageMemoryKidz.png";
-import imagePassionGuitar from "./imagePassionGuitar.png";
-import imagePortFolio from "./imagePortFolio.jpg";
+import imageDaddyDoList from "./imageDaddyDoList.webp";
+import imageMemoryKidz from "./imageMemoryKidz.webp";
+import imagePassionGuitar from "./imagePassionGuitar.webp";
+import imagePortFolio from "./imagePortFolio.webp";
 import imageProjectInProgress from "./logo.png"
 
 export default {

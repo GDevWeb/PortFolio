@@ -1,6 +1,6 @@
 import projectsArray from "./projectsArray";
 import ProjectItem from "./ProjectItem";
-import illustrationDefault from "/images/illustrationDefault.jpg";
+import indexImageProjects from "/public/images/projects/indexImageProjects";
 import "../../sass/projects.scss";
 
 function Projects() {
@@ -10,7 +10,7 @@ function Projects() {
       <ProjectItem
         key={project.id}
         id={project.id}
-        picture={picture ? project.picture : illustrationDefault}
+        picture={picture ? project.picture : indexImageProjects.imageProjectInProgress}
         title={title}
         resume={resume}
       />

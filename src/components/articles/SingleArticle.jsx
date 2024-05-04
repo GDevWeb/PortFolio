@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import articlesList from "./articlesList";
 import "../../sass/singleArticle.scss";
-import illustrationDefault from "/images/illustrationDefault.jpg";
+import indexImageProjects from "/public/images/projects/indexImageProjects";
 
 function SingleArticle() {
   const { id } = useParams();
@@ -22,7 +22,7 @@ function SingleArticle() {
       <div id="mainContainer" className="singleArticleContainer">
         <h2>{title}</h2>
         <figure>
-          <img src={picture ? picture : illustrationDefault} alt="" />
+          <img src={picture ? picture : indexImageProjects.imageProjectInProgress} alt="" />
         </figure>
         <div id="articleContent">
           <p>{content}</p>

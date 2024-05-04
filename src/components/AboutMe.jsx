@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "../sass/aboutMe.scss";
-import myAvatar from "../../public/images/avatar2.jpg";
+import myAvatar from "/public/images/avatar2.webp";
 import indexIcons from "../assets/icons/indexIcons";
 
 function About() {

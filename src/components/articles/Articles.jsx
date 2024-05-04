@@ -1,6 +1,6 @@
 import ArticleItem from "./ArticleItem";
 import articlesList from "./articlesList";
-import illustrationDefault from "/images/illustrationDefault.jpg";
+import indexImageProjects from "/public/images/projects/indexImageProjects";
 import "../../sass/articles.scss";
 
 function Articles() {
@@ -12,7 +12,7 @@ function Articles() {
         <ArticleItem
           key={article.id}
           id={article.id}
-          picture={picture ? article.picture : illustrationDefault}
+          picture={picture ? article.picture : indexImageProjects.imageProjectInProgress}
           title={title}
           author={author}
           date={date}

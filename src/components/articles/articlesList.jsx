@@ -1,5 +1,5 @@
-import apprenticeJourney from "/images/apprentice_journey.jpg?url";
 import { Link } from "react-router-dom";
+import apprenticeJourney from "/images/apprentice_journey.webp?url";
 
 const articlesList = [
   {

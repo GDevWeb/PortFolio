@@ -1,7 +1,7 @@
 import { useParams } from "react-router";
-import projectsArray from "./projectsArray";
-import illustrationDefault from "/images/illustrationDefault.jpg";
 import { Link } from "react-router-dom";
+import projectsArray from "./projectsArray";
+import indexImageProjects from "/public/images/projects/indexImageProjects";
 import "../../sass/singleProject.scss";
 
 function SingleProject() {
@@ -32,7 +32,7 @@ function SingleProject() {
         </div>
         <figure id="projectIllustration">
           <img
-            src={picture ? picture : illustrationDefault}
+            src={picture ? picture : indexImageProjects.imageProjectInProgress}
             alt={`image du projet ${title}`}
           />
         </figure>

@@ -1,4 +1,4 @@
-import SoftSkills from "../components/SoftSkills";
+import SoftSkills from "../components/SoftSkills/SoftSkills";
 
 function PageSoftSkills() {
   return (

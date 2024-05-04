@@ -29,10 +29,10 @@ const hardSkillsArray = [
     category: "frontend",
   },
   {
-    title: "BULMA",
-    icon: Icons.iconBulma,
+    title: "Tailwind",
+    icon: Icons.iconTailwind,
     content:
-      "Utilisation du framework CSS Bulma pour un rendu propre et rapide.",
+      "Utilisation du framework CSS Tailwind pour un rendu propre et rapide.",
     link: "#",
     fileName: "#",
     grade: "Intermédiaire",

@@ -67,8 +67,10 @@ function Home() {
       </section>
 
       <section className="id-section">
-        <div className="id-card">
+        <div className="circle-photo">
           <img src={myAvatar} alt="Ma photo" width="200px" />
+        </div>
+        <div className="id-card">
           <h1>Gaëtan Dammaretz</h1>
           <h2>Développeur web</h2>
           <div className="content">
@@ -93,7 +95,9 @@ function Home() {
                 comment je marie la créativité à la technologie.
               </p>
               <p>
-                <Link to="/about">En savoir plus sur moi</Link>
+                <button className="cta-button">
+                  <Link to="/about">En savoir plus sur moi</Link>
+                </button>
               </p>
             </article>
           </div>
@@ -101,7 +105,7 @@ function Home() {
       </section>
 
       <section className="articles-section">
-        <h2 className="title-section">Derniers articles</h2>
+        <h2 className="title-section">Dernier article</h2>
         <div className="article-card">
           <h3>À la recherche d'une alternance</h3>
           <img src={imgApprenticeJourney} alt="image article" />

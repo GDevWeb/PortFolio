@@ -165,31 +165,41 @@ const projectsArray = [
   },
   {
     id: 4,
-    title: "Mon petit primeur",
-    picture: ImagesProject.imageProjectInProgress,
+    title: "My NetWork Family",
+    picture: ImagesProject.imageMyFamilyNetwork,
     description: (
       <>
         <p>
-          Mon petit primeur est un projet personnel dit sandbox qui me permet de
-          revoir les notions de React, telles que le contexte et Redux Toolkit.
+          My NetWork family 👨‍👩‍👧‍👦 est un projet personnel évolutif en cours de
+          développement.
         </p>
         <p>
-          Ainsi qu'une grosse révision du backend - Actuellement en cours de
-          développement !
+          Dans sa première version, il sera un album photo consultable en ligne.
         </p>
+        <p>Au moment où j'écris ce post, j'ai fini la phase de maquettage</p>
+        <p>Prochain grand cap, l'intégration statique</p>
       </>
     ),
+    request:
+      "Besoin personnel, répondre à une demande de la famille.",
+    solution:
+      "Créer un album photo  en ligne grâce à React, react-router, sass.",
+    difficulties: "Pas de difficultés particulières pour la v1.",
+    upgrades:
+      "Ajouter un backend pour les prochaines version - login, compte etc ...",
     resume:
-      "Projet personnel pour revisiter les notions de React et du backend.",
+      "My Family Network, un album photo familial.",
     link: "#",
     category: [
       "frontend",
+      "backend",
       "application",
       "html",
       "css",
       "javascript",
       "responsive",
       "React",
+      "React Router",
     ],
   },
 ];

@@ -59,7 +59,7 @@ function Home() {
           <img src={indexImageProjects.imageMyFamilyNetwork} alt="Projet 2" />
           <p>Mon portfolio en perpétuel amélioration.</p>
           <button className="cta-button">
-            <a href={"projects/3"} className="cta-button">
+            <a href={"projects/4"} className="cta-button">
               Découvrir
             </a>
           </button>

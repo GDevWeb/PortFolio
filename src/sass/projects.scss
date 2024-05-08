@@ -15,7 +15,7 @@
   }
 
   section#section-introduction {
-    @include boxContainerGlassMorphism(80%, auto);
+    @include boxContainerGlassMorphism(90%, auto);
     padding: 1rem;
 
     p.projectIntroduction {

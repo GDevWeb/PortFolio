@@ -1,4 +1,3 @@
-import "./softSkillsArray";
 import softSkillsArray from "./softSkillsArray";
 import CardItem from "../CardItem";
 import ErrorMessage from "../Errors/ErrorMessage";

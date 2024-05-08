@@ -15,7 +15,7 @@
     }
 
     section.intro-section {
-        @include boxContainerGlassMorphism(100%, 200px);
+        @include boxContainerGlassMorphism(90%, 200px);
         padding: 1rem;
         overflow: scroll;
 

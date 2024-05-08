@@ -55,8 +55,8 @@ function Home() {
           </button>
         </div>
         <div className="project-card">
-          <h3>Mon portfolio</h3>
-          <img src={indexImageProjects.imagePortFolio} alt="Projet 2" />
+          <h3>My Family Network</h3>
+          <img src={indexImageProjects.imageMyFamilyNetwork} alt="Projet 2" />
           <p>Mon portfolio en perpétuel amélioration.</p>
           <button className="cta-button">
             <a href={"projects/3"} className="cta-button">

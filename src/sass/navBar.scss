@@ -3,7 +3,7 @@
 
 nav#navBar {
     display: none;
-    width: 100%;
+    width: 45%;
 
     @media screen and (min-width: 769px) {
         display: block;
@@ -21,6 +21,7 @@ nav#navBar {
             color: $light-text-color;
             margin-left: 1.5rem;
             line-height: 1.6;
+            color: black;
             
             &:hover {
                 color: $link-hover-light;
@@ -29,7 +30,8 @@ nav#navBar {
 
             &.activeLink,
             &.active {
-                color: $link-active;
+                color:$cta-button;
+                ;
             }
         }
     }

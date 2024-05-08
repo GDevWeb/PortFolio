@@ -8,13 +8,22 @@
   min-height: 100vh;
   margin: 0 auto;
   text-align: center;
-  background: $background-gradient-color;
+  background-color: #ffffff;
+  color: black;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     @include rotate-animation;
   }
+}
+
+header{
+
+  h1,h2,h3{
+    color: black;
+  }
+
 }
 
 main {
@@ -31,7 +40,15 @@ main {
 #mainContainer {
   min-height: 60vh;
   max-width: 1440px;
-  margin: 15vh auto 5vh;
+  margin: 5vh auto;
+
+  #container, section{
+    background-color: #f3f4f6;
+
+    h1,h2,h3{
+      color: black;
+    }
+  }
 }
 
 .errorMessage{
@@ -39,6 +56,11 @@ main {
   font-style: italic;
   font-weight: bolder;
 }
+
+.navLink{
+  color: black;
+}
+
 
 #navigation {
   display: flex;

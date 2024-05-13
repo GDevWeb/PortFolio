@@ -189,7 +189,7 @@ const projectsArray = [
       "Ajouter un backend pour les prochaines version - login, compte etc ...",
     resume:
       "My Family Network, un album photo familial.",
-    link: "#",
+    link: "https://my-family-network.vercel.app/",
     category: [
       "frontend",
       "backend",

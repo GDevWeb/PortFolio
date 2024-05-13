@@ -176,8 +176,8 @@ const projectsArray = [
         <p>
           Dans sa première version, il sera un album photo consultable en ligne.
         </p>
-        <p>Au moment où j'écris ce post, j'ai fini la phase de maquettage</p>
-        <p>Prochain grand cap, l'intégration statique</p>
+        <p>Au moment où j'écris ce post, j'ai presque fini l'intégration statique</p>
+        <p>Prochain grand cap, l'intégration du backend</p>
       </>
     ),
     request:

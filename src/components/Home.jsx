@@ -57,10 +57,14 @@ function Home() {
         <div className="project-card">
           <h3>My Family Network</h3>
           <img src={indexImageProjects.imageMyFamilyNetwork} alt="Projet 2" />
-          <p>Mon portfolio en perpétuel amélioration.</p>
+          <p>
+            My Family Network est un album photo en ligne qui proposera des
+            fonctionnalités type réseaux sociaux au fur et à mesure de son
+            développement.
+          </p>
           <button className="cta-button">
             <a href={"projects/4"} className="cta-button">
-              Découvrir
+              https://my-family-network.vercel.app/
             </a>
           </button>
         </div>

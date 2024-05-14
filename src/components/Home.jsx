@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "../sass/home.scss";
-import myAvatar from "/public/images/avatar2.webp";
+import myAvatar from "/public/images/Avatars/avatar.webp";
 import indexImageProjects from "/public/images/projects/indexImageProjects";
 import imgApprenticeJourney from "/public/images/apprentice_journey.webp";
 

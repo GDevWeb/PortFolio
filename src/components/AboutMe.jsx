@@ -1,14 +1,19 @@
 import { Link } from "react-router-dom";
 import "../sass/aboutMe.scss";
-import myAvatar from "/public/images/avatar2.webp";
 import indexIcons from "../assets/icons/indexIcons";
 
 function About() {
+  // 1.State:
+
+  // 2.Behavior :
+  const { iconHandShake, iconCode, iconGuitar, iconBookOpen } = indexIcons;
+  // 3.Render :
+
   return (
     <div id="mainContainer" className="aboutContainer">
       <section className="intro-section">
-        <figure className="avatar-container">
-          <img src={myAvatar} alt="Ma photo" />
+        <figure id="handShake-container">
+          <img src={iconHandShake} alt="Ma photo" />
         </figure>
         <div className="intro-text">
           <h2>Faisons connaissance !</h2>
@@ -31,7 +36,7 @@ function About() {
 
       <section className="skills-section">
         <div className="skill-box">
-          <img src={indexIcons.iconCode} alt="icône balise code" />
+          <img src={iconCode} alt="icône balise code" />
           <h3>Compétences en développement</h3>
           <p>
             Mon parcours comprend une série de projets personnels et informels
@@ -40,12 +45,12 @@ function About() {
           </p>
         </div>
         <div className="skill-box">
-          <img src={indexIcons.iconGuitar} alt="icône guitare" />
+          <img src={iconGuitar} alt="icône guitare" />
           <h3>Passe-temps musicaux</h3>
           <p>En dehors du code, je suis un mélomane-guitariste passionné.</p>
         </div>
         <div className="skill-box">
-          <img src={indexIcons.iconBookOpen} alt="icône livre ouvert" />
+          <img src={iconBookOpen} alt="icône livre ouvert" />
           <h3>Autres intérêts</h3>
           <p>
             Je suis également un adepte du street workout et un passionné des

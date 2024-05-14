@@ -83,7 +83,7 @@
     .circle-photo {
       width: 250px;
       height: 250px;
-      border-radius: 30% 70% 70% 30% / 30% 58% 42% 70%;
+      border-radius: 70% 100% 100% 100% / 30% 58% 42% 70%;
       @include flex-center;
       background-color: $cta-button;
       align-self: flex-end;
@@ -91,8 +91,8 @@
 
       img {
         display: inline-block;
-        @include imgResponsive(80%, auto);
-        border-radius: 30% 70% 70% 30% / 30% 58% 42% 70%;
+        @include imgResponsive(70%, auto);
+        border-radius: 100% 100% 100% 100% / 30% 58% 42% 70%;
       }
     }
 

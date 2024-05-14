@@ -13,6 +13,7 @@ import iconGithubSquare from "./iconGithubSquare.svg";
 import iconGreenSock from "./icon_GreenSock.svg";
 import iconGuitar from "./iconGuitar.svg";
 import iconHalfStroke from "./iconHalfStroke.svg";
+import iconHandShake from "./icon_HandShake.svg";
 import iconHtml5 from "./iconHtml5.svg";
 import iconJs from "./iconJs.svg";
 import iconLapTop from "./iconLaptop.svg";
@@ -52,6 +53,7 @@ export default{
   iconGreenSock,
   iconGuitar,
   iconHalfStroke,
+  iconHandShake,
   iconHtml5,
   iconJs,
   iconLapTop,

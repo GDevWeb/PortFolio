@@ -79,4 +79,4 @@ function About() {
 
 export default About;
 
-/* changement photo pour icone handShake correction nom*/
+/* pour icone handShake correction nom*/

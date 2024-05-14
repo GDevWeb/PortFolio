@@ -165,30 +165,30 @@ const projectsArray = [
   },
   {
     id: 4,
-    title: "My NetWork Family",
+    title: "My Family NetWork",
     picture: ImagesProject.imageMyFamilyNetwork,
     description: (
       <>
         <p>
-          My NetWork family 👨‍👩‍👧‍👦 est un projet personnel évolutif en cours de
+          My Family NetWork 👨‍👩‍👧‍👦 est un projet personnel évolutif en cours de
           développement.
         </p>
         <p>
           Dans sa première version, il sera un album photo consultable en ligne.
         </p>
-        <p>Au moment où j'écris ce post, j'ai presque fini l'intégration statique</p>
+        <p>
+          Au moment où j'écris ce post, j'ai presque fini l'intégration statique
+        </p>
         <p>Prochain grand cap, l'intégration du backend</p>
       </>
     ),
-    request:
-      "Besoin personnel, répondre à une demande de la famille.",
+    request: "Besoin personnel, répondre à une demande de la famille.",
     solution:
       "Créer un album photo  en ligne grâce à React, react-router, sass.",
     difficulties: "Pas de difficultés particulières pour la v1.",
     upgrades:
       "Ajouter un backend pour les prochaines version - login, compte etc ...",
-    resume:
-      "My Family Network, un album photo familial.",
+    resume: "My Family Network, un album photo familial.",
     link: "https://my-family-network.vercel.app/",
     category: [
       "frontend",

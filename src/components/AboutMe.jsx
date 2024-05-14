@@ -78,3 +78,5 @@ function About() {
 }
 
 export default About;
+
+/* changement photo pour icone handShake */

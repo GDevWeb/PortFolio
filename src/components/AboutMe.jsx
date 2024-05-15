@@ -60,6 +60,8 @@ function About() {
       </section>
 
       <section className="contact-section">
+        <div id="contact-section-content">
+
         <h2>Prêt à collaborer ?</h2>
         <p>
           Contactez-moi et découvrez comment nous pouvons créer ensemble des
@@ -72,6 +74,7 @@ function About() {
         <button className="cta-button">
           <Link to="/contact">Me contacter</Link>
         </button>
+        </div>
       </section>
     </div>
   );

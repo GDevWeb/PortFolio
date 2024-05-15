@@ -19,6 +19,10 @@
 
     #articleTitle {
         width: 100%;
+
+        h1 {
+            @include important-word;
+        }
     }
 
     .articleItem {
@@ -61,12 +65,13 @@
         }
 
         p.articleAuthor,
-        p.articleDate {
+        p.articleDate,
+        p.tags {
             width: 100%;
+            font-style: italic;
         }
 
         span.articleLabel {
-            color: $dark-text-color;
             font-weight: bolder;
         }
 

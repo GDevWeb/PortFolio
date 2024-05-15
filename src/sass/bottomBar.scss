@@ -12,7 +12,6 @@
     align-items: center;
     justify-content: space-evenly;
     @include boxContainerGlassMorphism(100%, auto, $margin: 0);
-    // border-radius: 100% 100% 0 0;
 
     #navBarBottom {
 
@@ -50,6 +49,7 @@
         #copyright {
             width: 100%;
             height: 7vh;
+            text-align: center;
         }
 
         .container-navIcon {

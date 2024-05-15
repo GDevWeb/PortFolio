@@ -13,7 +13,10 @@
         gap: 1rem;
         width: 100%;
     }
-
+    
+    h2{
+        @include important-word;
+    }
     section.intro-section {
         @include boxContainerGlassMorphism(90%, 200px);
         padding: 1rem;
@@ -66,7 +69,7 @@
 
             @media screen and (min-width: 768px) {
                 width: 30%;
-                height: 25rem;
+                min-height: 25rem;
             }
 
             .cardItemTitle {

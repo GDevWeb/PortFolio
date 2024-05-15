@@ -30,13 +30,12 @@ function HardSkills() {
   }, [filterSkills]);
 
   const hardSkillsList = filterSkills.map((hardSkills) => {
-    const { id, title, icon, content, link, fileName, grade } = hardSkills;
+    const { id, title, icon, link, fileName, grade } = hardSkills;
     return (
       <CardItem
         key={id}
         title={title}
         icon={icon}
-        // content={content}
         link={link}
         fileName={fileName}
         linkText={grade}
@@ -46,7 +45,7 @@ function HardSkills() {
   return (
     <div id="mainContainer" className="hardSkillsContainer">
       <div id="hardSkillsTitle">
-        <h2>HardSkills</h2>
+        <h2 className="important-word">HardSkills</h2>
         <div id="filter">
           <div id="filterName">
             <p>Filtrer par catégorie :</p>

@@ -38,11 +38,11 @@ function SingleArticle() {
             Tags : <span>{splittedTags}</span>
           </p>
         </div>
-      </div>
       <div id="navigation">
         <button className="cta-button">
           <Link to={"/articles"}>⬅️Retour à la liste des articles</Link>
         </button>
+      </div>
       </div>
     </>
   );

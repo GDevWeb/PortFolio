@@ -20,7 +20,7 @@ function Projects() {
   return (
     <div id="mainContainer" className="projectsContainer">
       <div id="projectTitle">
-        <h2>Mes projets</h2>
+        <h2 className="important-word">Mes projets</h2>
       </div>
       <section id="section-introduction">
         <h3>Retrouver ma liste d'une sélection de projets</h3>

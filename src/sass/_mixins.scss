@@ -7,7 +7,7 @@
   font-weight: bolder;
 }
 
-@mixin import-word {
+@mixin important-word {
   color: $blue-horizon;
 }
 
@@ -168,4 +168,8 @@ button {
   * {
     border: 0.1rem solid crimson;
   }
+}
+
+#navigation{
+  @include flex-center();
 }

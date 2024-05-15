@@ -4,38 +4,3 @@
 @import './sass/typography';
 
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    @include rotate-animation;
-  }
-}
-
-main {
-  display: flex;
-  flex-wrap: wrap;
-  flex-grow: 1;
-  width: 100%;
-  min-height: 60vh;
-  margin: 10vh auto;
-  padding: $default-padding;
-}
-
-#mainContainer {
-  min-height: 60vh;
-  width: 90%;
-  margin: 10vh auto;
-}
-
-.errorMessage{
-  color: $color-errorMessage;
-  font-style: italic;
-  font-weight: bolder;
-}
-
-#navigation {
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  width: 100%;
-  margin: auto;
-}

@@ -5,7 +5,9 @@ function ProfessionalExperience() {
   return (
     <div id="mainContainer" className="professionalExperienceContainer">
       <div className="professionalExperienceTitle">
-        <h2>Mon parcours professionnel</h2>
+        <h2>
+          Mon parcours <span className="important-word">professionnel</span>
+        </h2>
       </div>
 
       <section className="transition">

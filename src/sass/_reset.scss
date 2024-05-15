@@ -1,14 +1,9 @@
 @import 'variables.scss';
 @import 'mixins.scss';
 
-* {
-    min-width: 0;
-    font: inherit;
-}
-
 *,
-*::before,
-*::after {
+::before,
+::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -22,8 +17,8 @@ html {
 body {
     display: flex;
     place-items: center;
-    min-width: 320px;
     width: 100%;
+    min-width: $min-width;
     min-height: 100vh;
     margin: 0 auto;
     text-align: center;
@@ -35,7 +30,6 @@ body {
 
 #root {
     width: 100%;
-    min-width: 425px;
     min-height: 100vh;
     text-align: center;
     background: $backgroundColor-midnight-dawn;

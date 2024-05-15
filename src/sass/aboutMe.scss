@@ -4,10 +4,9 @@
 .aboutContainer {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: $default-gap;
   width: 100%;
-  height: auto;
-  padding: 2rem;
+  padding: $default-padding;
 
   @media screen and (min-width: 769px) {
     display: grid;
@@ -16,7 +15,6 @@
   }
 
   section:not(.skills-section) {
-    padding: 1rem;
     @include boxContainerGlassMorphism(100%, auto);
   }
 

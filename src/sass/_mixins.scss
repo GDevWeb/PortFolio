@@ -7,6 +7,10 @@
   font-weight: bolder;
 }
 
+@mixin import-word {
+  color: $blue-horizon;
+}
+
 
 /* Disposition */
 @mixin flex-center($flex-direction: row, $gap: $default-gap, $align-items: center, $justify-content: center) {
@@ -25,7 +29,7 @@
 @mixin boxContainerGlassMorphism($width, $height, $margin: $default-margin, $padding: $default-padding, $backgroundColor: $backgroundColor-deep-ocean-blue) {
   width: $width;
   height: $height;
-  margin: $margin;
+  margin: $margin auto;
   padding: $padding;
   background-color: $backgroundColor;
   box-shadow: 0 0 0.5rem rgb(0 0 0 / 15%);
@@ -157,4 +161,12 @@ a:hover {
 button {
   background-color: $blue-horizon;
   color: #FEFFFF;
+}
+
+/* Debug */
+
+@mixin debug-mod() {
+  * {
+    border: 0.1rem solid crimson;
+  }
 }

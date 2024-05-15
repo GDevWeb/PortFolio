@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: space-evenly;
     @include boxContainerGlassMorphism(100%, auto, $margin: 0);
+    border-radius: 100% 100% 0 0;
 
     #navBarBottom {
 
@@ -53,8 +54,8 @@
 
         .container-navIcon {
             position: absolute;
-            top: 1rem;
-            right: 1rem;
+            top: 12rem;
+            right: 4rem;
             display: flex;
             align-items: flex-end;
             justify-content: flex-end;

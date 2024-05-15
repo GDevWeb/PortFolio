@@ -1,18 +1,19 @@
 @import "variables";
 
 /* Font style */
-@mixin error-message{
-    color: $color-errorMessage;
-    font-style: italic;
-    font-weight: bolder;
-  }
-  
+@mixin error-message {
+  color: $color-errorMessage;
+  font-style: italic;
+  font-weight: bolder;
+}
+
 
 /* Disposition */
-@mixin flex-center {
+@mixin flex-center($flex-direction: row, $gap: $default-gap, $align-items: center, $justify-content: center) {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  gap: $default-gap;
+  align-items: $align-items;
+  justify-content: $justify-content;
 }
 
 /* Apparence des containers */
@@ -21,13 +22,40 @@
   border-radius: 1rem;
 }
 
-@mixin boxContainerGlassMorphism($width, $height) {
+@mixin boxContainerGlassMorphism($width, $height, $margin: $default-margin, $padding: $default-padding, $backgroundColor: $backgroundColor-deep-ocean-blue) {
   width: $width;
   height: $height;
-  background-color: rgb(255 255 255 / 5%);
+  margin: $margin;
+  padding: $padding;
+  background-color: $backgroundColor;
   box-shadow: 0 0 0.5rem rgb(0 0 0 / 15%);
   backdrop-filter: blur(1rem);
+  border: 1px solid $border-midnight-navy-color;
   border-radius: 1rem;
+  transform: border 0.2s ease-in-out;
+
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: $font-color-whispering-mist;
+    transition: color 0.2s ease-in-out;
+  }
+
+  &:hover {
+    border: 1px solid $border-hover-azur-skies;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      color: $border-hover-azur-skies;
+    }
+  }
+
 }
 
 /* Images responsives */
@@ -40,6 +68,7 @@
   border-radius: $border-radius;
 }
 
+
 // Animations :
 @mixin link-hover($color) {
   &:hover {
@@ -49,7 +78,7 @@
 
 @mixin button-hover($border-color) {
   &:hover {
-    border-color: $border-color;
+    border-color: $border-twilight-indigo-color;
   }
 }
 
@@ -102,31 +131,30 @@
   }
 }
 
-// Fillup :
+// button CTA:
 
-@mixin fillUpAnimation($color: $link-hover-light, $hoverColor: #fff, $transition: 0.8s) {
-  position: relative;
-  overflow: hidden;
-  transition: color $transition;
+button.cta-button>a {
+  color: black;
+}
 
-  &:hover {
-    color: $hoverColor;
+button.cta-button>a:hover {
+  color: $cta-font-hover-button-color;
+}
 
-    &::before {
-      height: 180%;
-    }
-  }
+button:hover {
+  @include button-hover($cta-button-hover);
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 0%;
-    background-color: $color;
-    z-index: -1;
-    transition: height $transition;
-    bottom: 0;
-    border-radius: 0 50% 0 0;
-  }
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+a:hover {
+  @include link-hover($link-hover-light);
+}
+
+button {
+  background-color: $blue-horizon;
+  color: #FEFFFF;
 }

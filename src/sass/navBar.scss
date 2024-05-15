@@ -15,21 +15,23 @@ nav#navBar {
         justify-content: flex-end;
         padding: 1rem 2rem 0;
         margin-bottom: 1rem;
+        border-top: 1px solid $border-midnight-navy-color;
+
 
         .navLink {
             text-decoration: none;
             color: $light-text-color;
             margin-left: 1.5rem;
             line-height: 1.6;
-            
+
             &:hover {
-                color: $link-hover-light;
+                color: $cta-button-hover;
                 transition: color 0.9s ease-in-out;
             }
 
             &.activeLink,
             &.active {
-                color: $link-active;
+                color: $blue-horizon;
             }
         }
     }

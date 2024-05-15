@@ -18,7 +18,6 @@
   section:not(.skills-section) {
     padding: 1rem;
     @include boxContainerGlassMorphism(100%, auto);
-    @include fillUpAnimation();
   }
 
   .intro-section {
@@ -78,7 +77,6 @@
       gap: 1rem;
       padding: 1rem;
       @include boxContainerGlassMorphism(100%, auto);
-      @include fillUpAnimation();
 
       @media screen and (min-width: 769px) {
         flex-basis: 30%;

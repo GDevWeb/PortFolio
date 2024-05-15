@@ -63,7 +63,6 @@
             gap: 1rem;
             padding: 0.5rem;
             @include boxContainerGlassMorphism(80%, auto);
-            @include fillUpAnimation();
 
             @media screen and (min-width: 768px) {
                 width: 30%;

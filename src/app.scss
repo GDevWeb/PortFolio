@@ -3,13 +3,6 @@
 @import './sass/mixins';
 @import './sass/typography';
 
-#root {
-  width: 100%;
-  min-height: 100vh;
-  margin: 0 auto;
-  text-align: center;
-  background: $background-gradient-color;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
@@ -23,9 +16,7 @@ main {
   flex-grow: 1;
   width: 100%;
   min-height: 60vh;
-  padding: 1rem;
-  margin: 15vh auto;
-  gap: 1rem;
+  margin: 10vh auto;
 }
 
 #mainContainer {

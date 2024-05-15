@@ -30,7 +30,6 @@
         @include boxContainerGlassMorphism(100%, auto);
         min-height: 30rem;
         padding: 1rem;
-        @include fillUpAnimation();
         cursor: pointer;
 
         figure {

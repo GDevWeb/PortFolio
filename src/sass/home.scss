@@ -36,13 +36,6 @@
     }
   }
 
-  .intro-section,
-  .about-me-section,
-  .contact-section,
-  .id-section {
-    @include fillUpAnimation();
-  }
-
   // Sections Portfolio et ID
   .portfolio-section,
   .id-section {
@@ -58,7 +51,6 @@
       gap: 1rem;
       padding: 1rem;
       @include boxContainerGlassMorphism(100%, auto);
-      @include fillUpAnimation();
 
       img {
         @include imgResponsive(60%, auto);
@@ -81,19 +73,25 @@
     justify-content: space-evenly;
 
     .circle-photo {
-      width: 250px;
-      height: 250px;
-      border-radius: 70% 100% 100% 100% / 30% 58% 42% 70%;
       @include flex-center;
-      background-color: $cta-button;
       align-self: flex-end;
       justify-self: end;
+      width: 250px;
+      height: 250px;
+      border: 1px solid $border-twilight-indigo-color;
+      border-radius: 9999px;
+      transition: border-color 0.2s ease-in-out;
+
+      &:hover{
+        border-color: $border-hover-azur-skies;
+      }
 
       img {
         display: inline-block;
         @include imgResponsive(70%, auto);
         border-radius: 100% 100% 100% 100% / 30% 58% 42% 70%;
       }
+
     }
 
     .content {
@@ -127,7 +125,6 @@
       padding: 1rem;
       width: 100%;
       height: auto;
-      @include fillUpAnimation();
 
       @media screen and (min-width: 769px) {
         flex-basis: 100%;

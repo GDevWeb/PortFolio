@@ -1,28 +1,41 @@
-$background-gradient-color: linear-gradient(243deg, rgba(255, 255, 255, 0.00) 0%, #87CEEB 93.4%);;
-$primary-color: #646cff;
-$primary-hover-color: #535bf2;
-$background-color: #242424;
-$light-title-color :#149ECA;
-$light-text-color: #faebd7;
-$dark-text-color: #213547;
-$light-background-color: #ffffff;
-$button-background-dark: #1a1a1a;
-$button-background-light: #f9f9f9;
-$logo-hover-shadow: #646cffaa;
-$react-logo-hover-shadow: #61dafbaa;
-$card-background: #3B3B3B;
-$link-hover-light: #747bff;
-$link-hover-dark: #888;
-$link-active: #ffa500;
+/* Marges */
+$default-margin: 1rem;
+$default-padding: 1rem;
+$default-gap: 1.6rem;
+
+
+/* New style */
+$backgroundColor-midnight-dawn: #171933;
+$backgroundColor-deep-ocean-blue: #22244d;
+$border-midnight-navy-color : #2a2e5e;
+$border-twilight-indigo-color : #181C3A;
+$border-hover-azur-skies: #4F8DDA;
+$font-color-whispering-mist: #d3dcff;
+$font-color-card-tranquil-water: #8391C7;
+
+/* CTA */
+$blue-horizon: #5396e7; //pause
+$deep-sky-blue: #0056b3; //:hover
 
 $color-errorMessage: #dc143c;
-$cta-button: #007bff;
-$cta-button-hover: #0056b3;
+$cta-button: $blue-horizon;
+$cta-button-hover: $deep-sky-blue;
+$cta-font-button-color: #ffffff;
+$cta-font-hover-button-color: lighten($cta-font-button-color, 10%);
 
+
+/* old */
 $debug-color : orange;
+$light-text-color: $font-color-whispering-mist;
+$dark-text-color: #213547;
+$button-background-light: #f9f9f9;
+$card-background: #3B3B3B;
+$link-hover-light: #747bff;
+$link-active: $deep-sky-blue;
 
 
 // font size : 
 $font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 $min-font-size: 1.4rem;
 $max-font-size: 2.8rem;
+$line-height: 1.2;

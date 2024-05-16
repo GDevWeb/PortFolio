@@ -1,5 +1,5 @@
 import ImagesProject from "../../../public/images/projects/indexImageProjects";
-
+import { nanoid } from "nanoid";
 const projectsArray = [
   {
     id: 0,

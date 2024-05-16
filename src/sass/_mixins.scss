@@ -172,4 +172,11 @@ button {
 
 #navigation{
   @include flex-center();
+  margin: auto;
+}
+
+@mixin breakpoint($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
 }

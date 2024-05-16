@@ -28,13 +28,12 @@ main{
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap;
-    width: 100vw;    
 }
     
     #mainContainer{
-        width: 90%;
+        width: 80%;
         min-width: $min-width;
-        // max-width: 80%;
+        max-width: $max-width;
         min-height: 100vh;
         margin: 20vh auto;
         text-align: center;

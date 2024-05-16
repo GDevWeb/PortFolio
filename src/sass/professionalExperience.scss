@@ -12,7 +12,7 @@
 
   @media screen and (min-width: 769px) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, min-max(300px,1fr));
     grid-template-rows: 200px repeat(3, auto-fit);
     align-items: center;
     justify-content: center;

@@ -8,12 +8,14 @@ function SoftSkills() {
 
   // 2.Behavior :
   const softSkillsList = softSkillsArray.map((softSkill) => {
-    const { id, title, icon, content, link, fileName, grade } = softSkill;
+    const { id, title, icon, altAccess, content, link, fileName, grade } =
+      softSkill;
     return (
       <CardItem
         key={id}
         title={title}
         icon={icon}
+        iconAlt={altAccess}
         // content={content}
         link={link}
         fileName={fileName}

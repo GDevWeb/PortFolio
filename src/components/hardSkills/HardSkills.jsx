@@ -30,12 +30,13 @@ function HardSkills() {
   }, [filterSkills]);
 
   const hardSkillsList = filterSkills.map((hardSkills) => {
-    const { id, title, icon, link, fileName, grade } = hardSkills;
+    const { id, title, icon, altAccess, link, fileName, grade } = hardSkills;
     return (
       <CardItem
         key={id}
         title={title}
         icon={icon}
+        iconAlt={altAccess}
         link={link}
         fileName={fileName}
         linkText={grade}

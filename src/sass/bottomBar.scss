@@ -12,11 +12,17 @@
     align-items: center;
     justify-content: space-evenly;
     @include boxContainerGlassMorphism(100%, auto, $margin: 0);
+    
+    @media screen and (min-width: 769px) {
+        position: relative;
+        border-radius: 100% 100% 0 0 / 100% 100% 0 0;
+    }
 
     #navBarBottom {
 
         @media screen and (min-width: 769px) {
             display: none;
+            position: absolute;
         }
     }
 

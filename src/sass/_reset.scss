@@ -1,44 +1,39 @@
 @import 'variables.scss';
 @import 'mixins.scss';
 
-*,
-::before,
-::after {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 html {
-    font-size: 0.64rem;
+    font-size: 62.5%;
+    line-height: $line-height;
+    scroll-behavior: smooth;
 }
-
 
 body {
-    min-width: $min-width; //controle
-    background: $backgroundColor-midnight-dawn;
+    font-size: $default-fontSize;
     font-family: $font-family;
-    font-size: 1.6rem;
     color: $light-text-color;
-    
+    background-color: $backgroundColor-midnight-dawn;
 }
 
-main{
+
+main {
     display: flex;
     flex-grow: 1;
-    flex-wrap: wrap;
+    margin: 15vh auto;
 }
-    
-    #mainContainer{
-        width: 80%;
-        min-width: $min-width;
-        max-width: $max-width;
-        min-height: 100vh;
-        margin: 20vh auto;
-        text-align: center;
-    }
-    
+
+#mainContainer {
+    margin: auto;
+    max-width: 149rem;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
 
 h1,
 h2,
@@ -88,4 +83,3 @@ button {
     cursor: pointer;
     transition: border-color 0.2s ease-in-out;
 }
-

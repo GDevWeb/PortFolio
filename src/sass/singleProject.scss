@@ -104,6 +104,7 @@
 
     #section-projectLink {
         grid-column: 3/-1;
+        gap: $default-gap;
         grid-row: 4;
         width: 100%;
         padding: 1rem;

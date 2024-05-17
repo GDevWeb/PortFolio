@@ -28,7 +28,6 @@
   figure {
     grid-column: 1/2;
     grid-row: 2/4;
-    width: 45%;
     margin: auto;
 
     img {
@@ -38,20 +37,20 @@
   }
 
   #articleContent {
-    grid-column: 2/3;
+    grid-column: 2;
     grid-row: 2/3;
     margin: auto;
   }
 
   #articleDetail {
     grid-column: 2;
-    grid-row: 4;
-    padding: 1rem;
+    grid-row: 3;
+    padding: $default-padding;
 
     p.articleLabel {
       font-weight: bolder;
     }
-    
+
     span {
       font-weight: normal;
       font-style: italic;
@@ -59,11 +58,9 @@
   }
 
 
+  #navigation {
+    grid-column: 2;
+    grid-row: 4;
+  }
 
 }
-
-#navigation{
-  grid-column: -1;
-  grid-row: -1;
-}
-

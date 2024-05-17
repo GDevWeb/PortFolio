@@ -60,7 +60,9 @@
         align-items: center;
         justify-content: space-evenly;
         @include boxContainerGlassMorphism(100%, auto);
-        padding: 1rem;
+        gap: $default-gap;
+        padding: $default-padding;
+        margin: $default-margin;
 
         h3 {
             width: 100%;
@@ -71,6 +73,12 @@
     #section-description {
         grid-column: 1/-1;
         grid-row: 3;
+
+        p{
+            padding: $default-padding;
+            margin: $default-margin;
+        }
+
     }
 
     #section-projectDetails {
@@ -79,11 +87,13 @@
 
         li {
             list-style: none;
-            margin: 1rem;
+            padding: $default-padding;
+            margin: $default-margin;
+            
 
-            span{
+            span {
                 font-weight: bolder;
-                
+
             }
         }
     }
@@ -94,6 +104,8 @@
 
         p {
             font-weight: bolder;
+            padding: $default-padding;
+            margin: $default-margin;
         }
 
         span.projectTags {
@@ -111,8 +123,7 @@
     }
 }
 
-#navigation{
+#navigation {
     grid-column: 4;
     grid-row: 5;
 }
-

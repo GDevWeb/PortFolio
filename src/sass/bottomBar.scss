@@ -14,7 +14,7 @@
     @include boxContainerGlassMorphism(100%, auto, $margin: 0);
     
     @media screen and (min-width: 769px) {
-        position: absolute;
+        position: static;
         border-radius: 100% 100% 0 0 / 100% 100% 0 0;
     }
 

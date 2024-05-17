@@ -25,7 +25,7 @@ function SingleArticle() {
           <img src={picture ? picture : indexImageProjects.imageProjectInProgress} alt="" />
         </figure>
         <div id="articleContent">
-          <p>{content}</p>
+          {content}
         </div>
         <div id="articleDetail">
           <p className="articleLabel">

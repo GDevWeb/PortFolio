@@ -71,12 +71,12 @@ function SingleProject() {
           <button className="cta-button">
             <a href={link}>Voir le projet</a>
           </button>
+        </section>
       <div id="navigation">
         <button className="cta-button">
           <Link to={"/projects"}>⬅️Retour à la liste des projets</Link>
         </button>
       </div>
-        </section>
       </div>
     </>
   );

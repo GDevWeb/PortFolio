@@ -28,7 +28,7 @@ main {
 }
 
 #mainContainer {
-    max-width: 149rem;
+    max-width: $max-width;
     margin: 15vh auto;
     padding: 2rem;
     text-align: center;

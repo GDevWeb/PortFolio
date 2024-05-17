@@ -4,7 +4,7 @@
 .homeContainer {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: $default-gap;
   padding: $default-padding;
   width: 100%;
   height: auto;

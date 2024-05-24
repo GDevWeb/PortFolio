@@ -27,6 +27,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%; //
 
     @media screen and (min-width: 769px) {
       grid-column: span 3;
@@ -65,9 +66,14 @@
   }
 
   .skills-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 769px) {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
 
     @media screen and (min-width: 769px) {
       grid-column: span 3;
@@ -100,10 +106,11 @@
   .contact-section {
     @include flex-center;
 
-    #contact-section-content{
+    #contact-section-content {
       width: 100%;
       padding: $default-padding;
     }
+
     text-align: center;
 
     @media screen and (min-width: 769px) {

@@ -174,12 +174,12 @@ const projectsArray = [
           développement.
         </p>
         <p>
-          Dans sa première version, il sera un album photo consultable en ligne.
+          Dans sa version actuel, il est statique.
         </p>
         <p>
-          Au moment où j'écris ce post, j'ai presque fini l'intégration statique
+          Au moment où j'écris ce post, je développe les routes d'authentification
         </p>
-        <p>Prochain grand cap, l'intégration du backend</p>
+        <p>Prochain grand cap, l'intégration backend</p>
       </>
     ),
     request: "Besoin personnel, répondre à une demande de la famille.",

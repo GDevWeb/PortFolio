@@ -14,12 +14,12 @@
     width: 100%;
   }
 
-  h2{
+  h2 {
     @include important-word;
   }
 
   section#section-introduction {
-    @include boxContainerGlassMorphism(90%, auto);
+    @include boxContainerGlassMorphism(100%, auto);
     padding: 1rem;
 
     p.projectIntroduction {
@@ -51,7 +51,7 @@
     @include flex-center;
     flex-wrap: wrap;
     gap: 1.5rem;
-    
+
   }
 }
 

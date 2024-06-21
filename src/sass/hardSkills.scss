@@ -13,12 +13,13 @@
         gap: 1rem;
         width: 100%;
     }
-    
-    h2{
+
+    h2 {
         @include important-word;
     }
+
     section.intro-section {
-        @include boxContainerGlassMorphism(90%, 200px);
+        @include boxContainerGlassMorphism(100%, 200px);
         padding: 1rem;
         overflow: scroll;
 

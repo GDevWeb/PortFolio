@@ -29,9 +29,10 @@
         align-items: center;
         justify-content: center;
         width: 100%;
+        padding: $default-padding;
 
         @media screen and (min-width: 769px) {
-            align-items: flex-start;
+            align-items: center;
             grid-column: 3/5;
             grid-row: 2/3;
         }
@@ -39,7 +40,7 @@
         img {
             @include imgResponsive(100%, auto);
 
-            @media screen and (min-width: 768px) {
+            @media screen and (min-width: 769px) {
                 width: 45%;
             }
 

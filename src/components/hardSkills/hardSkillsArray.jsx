@@ -100,7 +100,7 @@ const hardSkillsArray = [
     content: "Création de serveurs côté backend avec Node.js.",
     link: "#",
     fileName: "#",
-    grade: "Débutant",
+    grade: "Intermédiaire",
     category: "backend",
   },
   {
@@ -111,7 +111,7 @@ const hardSkillsArray = [
     content: "Bases de données NoSQL avec MongoDB.",
     link: "#",
     fileName: "#",
-    grade: "Débutant",
+    grade: "Intermédiaire",
     category: "backend",
   },
   {
@@ -122,7 +122,7 @@ const hardSkillsArray = [
     content: "Construction d'applications web avec le framework Express.js.",
     link: "#",
     fileName: "#",
-    grade: "Débutant",
+    grade: "Intermédiaire",
     category: "backend",
   },
   {
